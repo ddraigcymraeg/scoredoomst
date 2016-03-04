@@ -1,0 +1,1350 @@
+ State 0:
+          main ::= * translation_unit
+      (1) translation_unit ::= *
+          translation_unit ::= * translation_unit external_declaration
+
+                          main accept
+              translation_unit shift  1
+                     {default} reduce 1
+
+State 1:
+      (0) main ::= translation_unit *
+          translation_unit ::= translation_unit * external_declaration
+          external_declaration ::= * print_statement
+          external_declaration ::= * actions_def
+          external_declaration ::= * org_heights_def
+          external_declaration ::= * action_list_def
+          external_declaration ::= * codep_conv_def
+          external_declaration ::= * org_spr_names_def
+          external_declaration ::= * state_map_def
+          external_declaration ::= * sound_map_def
+          external_declaration ::= * info_names_def
+          external_declaration ::= * thing_bits_def
+          external_declaration ::= * render_styles_def
+          print_statement ::= * PRINT LPAREN print_list RPAREN
+          actions_def ::= * Actions LBRACE actions_list RBRACE SEMICOLON
+          org_heights_def ::= * OrgHeights LBRACE org_heights_list RBRACE SEMICOLON
+          action_list_def ::= * ActionList LBRACE action_list_list RBARCE SEMICOLON
+          codep_conv_def ::= * CodePConv LBRACE codep_conv_list RBRACE SEMICOLON
+          org_spr_names_def ::= * OrgSprNames LBRACE org_spr_names_list RBRACE SEMICOLON
+          state_map_def ::= * StateMap LBRACE state_map_list RBRACE SEMICOLON
+          sound_map_def ::= * SoundMap LBRACE sound_map_list RBRACE SEMICOLON
+          info_names_def ::= * InfoNames LBRACE info_names_list RBRACE SEMICOLON
+          thing_bits_def ::= * ThingBits LBRACE thing_bits_list RBRACE SEMICOLON
+          render_styles_def ::= * RenderStyles LBRACE render_styles_list RBRACE SEMICOLON
+
+                         PRINT shift  80
+                       Actions shift  71
+                    OrgHeights shift  86
+                    ActionList shift  60
+                     CodePConv shift  68
+                   OrgSprNames shift  76
+                      StateMap shift  84
+                      SoundMap shift  74
+                     InfoNames shift  66
+                     ThingBits shift  57
+                  RenderStyles shift  73
+          external_declaration shift  137
+               print_statement shift  131
+                   actions_def shift  130
+               org_heights_def shift  126
+               action_list_def shift  120
+                codep_conv_def shift  119
+             org_spr_names_def shift  118
+                 state_map_def shift  117
+                 sound_map_def shift  109
+                info_names_def shift  101
+                thing_bits_def shift  95
+             render_styles_def shift  94
+                     {default} reduce 0
+
+State 2:
+     (15) print_list ::= *
+          print_list ::= * print_item
+          print_list ::= * print_item COMMA print_list
+          print_list ::= print_item COMMA * print_list
+          print_item ::= * STRING
+          print_item ::= * exp
+          print_item ::= * ENDL
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                        STRING shift  100
+                          ENDL shift  129
+                           NUM shift  103
+                    print_list shift  93
+                    print_item shift  77
+                           exp shift  36
+                     {default} reduce 15
+
+State 3:
+          print_statement ::= PRINT LPAREN * print_list RPAREN
+     (15) print_list ::= *
+          print_list ::= * print_item
+          print_list ::= * print_item COMMA print_list
+          print_item ::= * STRING
+          print_item ::= * exp
+          print_item ::= * ENDL
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                        STRING shift  100
+                          ENDL shift  129
+                           NUM shift  103
+                    print_list shift  83
+                    print_item shift  77
+                           exp shift  36
+                     {default} reduce 15
+
+State 4:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          render_styles_def ::= RenderStyles LBRACE * render_styles_list RBRACE SEMICOLON
+     (73) render_styles_list ::= *
+          render_styles_list ::= * render_styles_entry
+          render_styles_list ::= * render_styles_list COMMA render_styles_entry
+          render_styles_entry ::= * exp COMMA SYM
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  32
+            render_styles_list shift  54
+           render_styles_entry shift  139
+                     {default} reduce 73
+
+State 5:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          thing_bits_def ::= ThingBits LBRACE * thing_bits_list RBRACE SEMICOLON
+     (68) thing_bits_list ::= *
+          thing_bits_list ::= * thing_bits_entry
+          thing_bits_list ::= * thing_bits_list COMMA thing_bits_entry
+          thing_bits_entry ::= * exp COMMA exp COMMA SYM
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  33
+               thing_bits_list shift  50
+              thing_bits_entry shift  128
+                     {default} reduce 68
+
+State 6:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          codep_conv_def ::= CodePConv LBRACE * codep_conv_list RBRACE SEMICOLON
+     (44) codep_conv_list ::= *
+          codep_conv_list ::= * exp
+          codep_conv_list ::= * codep_conv_list COMMA exp
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  40
+               codep_conv_list shift  44
+                     {default} reduce 44
+
+State 7:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          org_heights_def ::= OrgHeights LBRACE * org_heights_list RBRACE SEMICOLON
+     (36) org_heights_list ::= *
+          org_heights_list ::= * exp
+          org_heights_list ::= * org_heights_list COMMA exp
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  38
+              org_heights_list shift  52
+                     {default} reduce 36
+
+State 8:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          thing_bits_list ::= thing_bits_list COMMA * thing_bits_entry
+          thing_bits_entry ::= * exp COMMA exp COMMA SYM
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  33
+              thing_bits_entry shift  127
+
+State 9:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          render_styles_list ::= render_styles_list COMMA * render_styles_entry
+          render_styles_entry ::= * exp COMMA SYM
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  32
+           render_styles_entry shift  138
+
+State 10:
+          state_map_def ::= StateMap LBRACE * state_map_list RBRACE SEMICOLON
+     (52) state_map_list ::= *
+          state_map_list ::= * state_map_entry
+          state_map_list ::= * state_map_list COMMA state_map_entry
+          state_map_entry ::= * SYM COMMA state_type COMMA exp
+
+                           SYM shift  82
+                state_map_list shift  55
+               state_map_entry shift  99
+                     {default} reduce 52
+
+State 11:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          thing_bits_entry ::= exp COMMA * exp COMMA SYM
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  31
+
+State 12:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          state_map_entry ::= SYM COMMA state_type COMMA * exp
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  35
+
+State 13:
+          state_map_entry ::= SYM COMMA * state_type COMMA exp
+          state_type ::= * FirstState
+          state_type ::= * SpawnState
+          state_type ::= * DeathState
+
+                    FirstState shift  96
+                    SpawnState shift  97
+                    DeathState shift  98
+                    state_type shift  75
+
+State 14:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= exp XOR * exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  42
+
+State 15:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= exp DIVIDE * exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  113
+
+State 16:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= exp OR * exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  41
+
+State 17:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= exp AND * exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  43
+
+State 18:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= exp MULTIPLY * exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  111
+
+State 19:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= MINUS * exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  135
+
+State 20:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= exp MINUS * exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  51
+
+State 21:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          codep_conv_list ::= codep_conv_list COMMA * exp
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  39
+
+State 22:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          org_heights_list ::= org_heights_list COMMA * exp
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  37
+
+State 23:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= exp PLUS * exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  53
+
+State 24:
+          exp ::= * NUM
+          exp ::= * exp PLUS exp
+          exp ::= * exp MINUS exp
+          exp ::= * exp MULTIPLY exp
+          exp ::= * exp DIVIDE exp
+          exp ::= * exp OR exp
+          exp ::= * exp AND exp
+          exp ::= * exp XOR exp
+          exp ::= * MINUS exp
+          exp ::= * LPAREN exp RPAREN
+          exp ::= LPAREN * exp RPAREN
+
+                         MINUS shift  19
+                        LPAREN shift  24
+                           NUM shift  103
+                           exp shift  34
+
+State 25:
+          actions_def ::= Actions LBRACE * actions_list RBRACE SEMICOLON
+     (32) actions_list ::= *
+          actions_list ::= * SYM
+          actions_list ::= * actions_list COMMA SYM
+
+                           SYM shift  121
+                  actions_list shift  46
+                     {default} reduce 32
+
+State 26:
+          info_names_def ::= InfoNames LBRACE * info_names_list RBRACE SEMICOLON
+     (64) info_names_list ::= *
+          info_names_list ::= * SYM
+          info_names_list ::= * info_names_list COMMA SYM
+
+                           SYM shift  115
+               info_names_list shift  48
+                     {default} reduce 64
+
+State 27:
+          action_list_def ::= ActionList LBRACE * action_list_list RBARCE SEMICOLON
+     (40) action_list_list ::= *
+          action_list_list ::= * SYM
+          action_list_list ::= * action_list_list COMMA SYM
+
+                           SYM shift  105
+              action_list_list shift  49
+                     {default} reduce 40
+
+State 28:
+          org_spr_names_def ::= OrgSprNames LBRACE * org_spr_names_list RBRACE SEMICOLON
+     (48) org_spr_names_list ::= *
+          org_spr_names_list ::= * SYM
+          org_spr_names_list ::= * org_spr_names_list COMMA SYM
+
+                           SYM shift  89
+            org_spr_names_list shift  47
+                     {default} reduce 48
+
+State 29:
+          sound_map_def ::= SoundMap LBRACE * sound_map_list RBRACE SEMICOLON
+     (60) sound_map_list ::= *
+          sound_map_list ::= * STRING
+          sound_map_list ::= * sound_map_list COMMA STRING
+
+                        STRING shift  107
+                sound_map_list shift  45
+                     {default} reduce 60
+
+State 30:
+          state_map_list ::= state_map_list COMMA * state_map_entry
+          state_map_entry ::= * SYM COMMA state_type COMMA exp
+
+                           SYM shift  82
+               state_map_entry shift  90
+
+State 31:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+          thing_bits_entry ::= exp COMMA exp * COMMA SYM
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                         COMMA shift  61
+
+State 32:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+          render_styles_entry ::= exp * COMMA SYM
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                         COMMA shift  78
+
+State 33:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+          thing_bits_entry ::= exp * COMMA exp COMMA SYM
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                         COMMA shift  11
+
+State 34:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+          exp ::= LPAREN exp * RPAREN
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                        RPAREN shift  132
+
+State 35:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (55) state_map_entry ::= SYM COMMA state_type COMMA exp *
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 55
+
+State 36:
+     (19) print_item ::= exp *
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 19
+
+State 37:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (38) org_heights_list ::= org_heights_list COMMA exp *
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 38
+
+State 38:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (37) org_heights_list ::= exp *
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 37
+
+State 39:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (46) codep_conv_list ::= codep_conv_list COMMA exp *
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 46
+
+State 40:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (45) codep_conv_list ::= exp *
+
+                            OR shift  16
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 45
+
+State 41:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+     (26) exp ::= exp OR exp *
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                           XOR shift  14
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 26
+
+State 42:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (28) exp ::= exp XOR exp *
+
+                           AND shift  17
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 28
+
+State 43:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+     (27) exp ::= exp AND exp *
+          exp ::= exp * XOR exp
+
+                         MINUS shift  20
+                          PLUS shift  23
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 27
+
+State 44:
+          codep_conv_def ::= CodePConv LBRACE codep_conv_list * RBRACE SEMICOLON
+          codep_conv_list ::= codep_conv_list * COMMA exp
+
+                         COMMA shift  21
+                        RBRACE shift  72
+
+State 45:
+          sound_map_def ::= SoundMap LBRACE sound_map_list * RBRACE SEMICOLON
+          sound_map_list ::= sound_map_list * COMMA STRING
+
+                         COMMA shift  67
+                        RBRACE shift  70
+
+State 46:
+          actions_def ::= Actions LBRACE actions_list * RBRACE SEMICOLON
+          actions_list ::= actions_list * COMMA SYM
+
+                         COMMA shift  62
+                        RBRACE shift  69
+
+State 47:
+          org_spr_names_def ::= OrgSprNames LBRACE org_spr_names_list * RBRACE SEMICOLON
+          org_spr_names_list ::= org_spr_names_list * COMMA SYM
+
+                         COMMA shift  81
+                        RBRACE shift  79
+
+State 48:
+          info_names_def ::= InfoNames LBRACE info_names_list * RBRACE SEMICOLON
+          info_names_list ::= info_names_list * COMMA SYM
+
+                         COMMA shift  58
+                        RBRACE shift  59
+
+State 49:
+          action_list_def ::= ActionList LBRACE action_list_list * RBARCE SEMICOLON
+          action_list_list ::= action_list_list * COMMA SYM
+
+                         COMMA shift  65
+                        RBARCE shift  63
+
+State 50:
+          thing_bits_def ::= ThingBits LBRACE thing_bits_list * RBRACE SEMICOLON
+          thing_bits_list ::= thing_bits_list * COMMA thing_bits_entry
+
+                         COMMA shift  8
+                        RBRACE shift  64
+
+State 51:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+     (23) exp ::= exp MINUS exp *
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 23
+
+State 52:
+          org_heights_def ::= OrgHeights LBRACE org_heights_list * RBRACE SEMICOLON
+          org_heights_list ::= org_heights_list * COMMA exp
+
+                         COMMA shift  22
+                        RBRACE shift  56
+
+State 53:
+          exp ::= exp * PLUS exp
+     (22) exp ::= exp PLUS exp *
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                      MULTIPLY shift  18
+                        DIVIDE shift  15
+                     {default} reduce 22
+
+State 54:
+          render_styles_def ::= RenderStyles LBRACE render_styles_list * RBRACE SEMICOLON
+          render_styles_list ::= render_styles_list * COMMA render_styles_entry
+
+                         COMMA shift  9
+                        RBRACE shift  85
+
+State 55:
+          state_map_def ::= StateMap LBRACE state_map_list * RBRACE SEMICOLON
+          state_map_list ::= state_map_list * COMMA state_map_entry
+
+                         COMMA shift  30
+                        RBRACE shift  87
+
+State 56:
+          org_heights_def ::= OrgHeights LBRACE org_heights_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  116
+
+State 57:
+          thing_bits_def ::= ThingBits * LBRACE thing_bits_list RBRACE SEMICOLON
+
+                        LBRACE shift  5
+
+State 58:
+          info_names_list ::= info_names_list COMMA * SYM
+
+                           SYM shift  114
+
+State 59:
+          info_names_def ::= InfoNames LBRACE info_names_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  112
+
+State 60:
+          action_list_def ::= ActionList * LBRACE action_list_list RBARCE SEMICOLON
+
+                        LBRACE shift  27
+
+State 61:
+          thing_bits_entry ::= exp COMMA exp COMMA * SYM
+
+                           SYM shift  122
+
+State 62:
+          actions_list ::= actions_list COMMA * SYM
+
+                           SYM shift  123
+
+State 63:
+          action_list_def ::= ActionList LBRACE action_list_list RBARCE * SEMICOLON
+
+                     SEMICOLON shift  110
+
+State 64:
+          thing_bits_def ::= ThingBits LBRACE thing_bits_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  125
+
+State 65:
+          action_list_list ::= action_list_list COMMA * SYM
+
+                           SYM shift  108
+
+State 66:
+          info_names_def ::= InfoNames * LBRACE info_names_list RBRACE SEMICOLON
+
+                        LBRACE shift  26
+
+State 67:
+          sound_map_list ::= sound_map_list COMMA * STRING
+
+                        STRING shift  106
+
+State 68:
+          codep_conv_def ::= CodePConv * LBRACE codep_conv_list RBRACE SEMICOLON
+
+                        LBRACE shift  6
+
+State 69:
+          actions_def ::= Actions LBRACE actions_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  124
+
+State 70:
+          sound_map_def ::= SoundMap LBRACE sound_map_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  104
+
+State 71:
+          actions_def ::= Actions * LBRACE actions_list RBRACE SEMICOLON
+
+                        LBRACE shift  25
+
+State 72:
+          codep_conv_def ::= CodePConv LBRACE codep_conv_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  102
+
+State 73:
+          render_styles_def ::= RenderStyles * LBRACE render_styles_list RBRACE SEMICOLON
+
+                        LBRACE shift  4
+
+State 74:
+          sound_map_def ::= SoundMap * LBRACE sound_map_list RBRACE SEMICOLON
+
+                        LBRACE shift  29
+
+State 75:
+          state_map_entry ::= SYM COMMA state_type * COMMA exp
+
+                         COMMA shift  12
+
+State 76:
+          org_spr_names_def ::= OrgSprNames * LBRACE org_spr_names_list RBRACE SEMICOLON
+
+                        LBRACE shift  28
+
+State 77:
+     (16) print_list ::= print_item *
+          print_list ::= print_item * COMMA print_list
+
+                         COMMA shift  2
+                     {default} reduce 16
+
+State 78:
+          render_styles_entry ::= exp COMMA * SYM
+
+                           SYM shift  133
+
+State 79:
+          org_spr_names_def ::= OrgSprNames LBRACE org_spr_names_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  92
+
+State 80:
+          print_statement ::= PRINT * LPAREN print_list RPAREN
+
+                        LPAREN shift  3
+
+State 81:
+          org_spr_names_list ::= org_spr_names_list COMMA * SYM
+
+                           SYM shift  91
+
+State 82:
+          state_map_entry ::= SYM * COMMA state_type COMMA exp
+
+                         COMMA shift  13
+
+State 83:
+          print_statement ::= PRINT LPAREN print_list * RPAREN
+
+                        RPAREN shift  88
+
+State 84:
+          state_map_def ::= StateMap * LBRACE state_map_list RBRACE SEMICOLON
+
+                        LBRACE shift  10
+
+State 85:
+          render_styles_def ::= RenderStyles LBRACE render_styles_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  136
+
+State 86:
+          org_heights_def ::= OrgHeights * LBRACE org_heights_list RBRACE SEMICOLON
+
+                        LBRACE shift  7
+
+State 87:
+          state_map_def ::= StateMap LBRACE state_map_list RBRACE * SEMICOLON
+
+                     SEMICOLON shift  134
+
+State 88:
+     (14) print_statement ::= PRINT LPAREN print_list RPAREN *
+
+                     {default} reduce 14
+
+State 89:
+     (49) org_spr_names_list ::= SYM *
+
+                     {default} reduce 49
+
+State 90:
+     (54) state_map_list ::= state_map_list COMMA state_map_entry *
+
+                     {default} reduce 54
+
+State 91:
+     (50) org_spr_names_list ::= org_spr_names_list COMMA SYM *
+
+                     {default} reduce 50
+
+State 92:
+     (47) org_spr_names_def ::= OrgSprNames LBRACE org_spr_names_list RBRACE SEMICOLON *
+
+                     {default} reduce 47
+
+State 93:
+     (17) print_list ::= print_item COMMA print_list *
+
+                     {default} reduce 17
+
+State 94:
+     (13) external_declaration ::= render_styles_def *
+
+                     {default} reduce 13
+
+State 95:
+     (12) external_declaration ::= thing_bits_def *
+
+                     {default} reduce 12
+
+State 96:
+     (56) state_type ::= FirstState *
+
+                     {default} reduce 56
+
+State 97:
+     (57) state_type ::= SpawnState *
+
+                     {default} reduce 57
+
+State 98:
+     (58) state_type ::= DeathState *
+
+                     {default} reduce 58
+
+State 99:
+     (53) state_map_list ::= state_map_entry *
+
+                     {default} reduce 53
+
+State 100:
+     (18) print_item ::= STRING *
+
+                     {default} reduce 18
+
+State 101:
+     (11) external_declaration ::= info_names_def *
+
+                     {default} reduce 11
+
+State 102:
+     (43) codep_conv_def ::= CodePConv LBRACE codep_conv_list RBRACE SEMICOLON *
+
+                     {default} reduce 43
+
+State 103:
+     (21) exp ::= NUM *
+
+                     {default} reduce 21
+
+State 104:
+     (59) sound_map_def ::= SoundMap LBRACE sound_map_list RBRACE SEMICOLON *
+
+                     {default} reduce 59
+
+State 105:
+     (41) action_list_list ::= SYM *
+
+                     {default} reduce 41
+
+State 106:
+     (62) sound_map_list ::= sound_map_list COMMA STRING *
+
+                     {default} reduce 62
+
+State 107:
+     (61) sound_map_list ::= STRING *
+
+                     {default} reduce 61
+
+State 108:
+     (42) action_list_list ::= action_list_list COMMA SYM *
+
+                     {default} reduce 42
+
+State 109:
+     (10) external_declaration ::= sound_map_def *
+
+                     {default} reduce 10
+
+State 110:
+     (39) action_list_def ::= ActionList LBRACE action_list_list RBARCE SEMICOLON *
+
+                     {default} reduce 39
+
+State 111:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+     (24) exp ::= exp MULTIPLY exp *
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                     {default} reduce 24
+
+State 112:
+     (63) info_names_def ::= InfoNames LBRACE info_names_list RBRACE SEMICOLON *
+
+                     {default} reduce 63
+
+State 113:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+     (25) exp ::= exp DIVIDE exp *
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+
+                     {default} reduce 25
+
+State 114:
+     (66) info_names_list ::= info_names_list COMMA SYM *
+
+                     {default} reduce 66
+
+State 115:
+     (65) info_names_list ::= SYM *
+
+                     {default} reduce 65
+
+State 116:
+     (35) org_heights_def ::= OrgHeights LBRACE org_heights_list RBRACE SEMICOLON *
+
+                     {default} reduce 35
+
+State 117:
+      (9) external_declaration ::= state_map_def *
+
+                     {default} reduce 9
+
+State 118:
+      (8) external_declaration ::= org_spr_names_def *
+
+                     {default} reduce 8
+
+State 119:
+      (7) external_declaration ::= codep_conv_def *
+
+                     {default} reduce 7
+
+State 120:
+      (6) external_declaration ::= action_list_def *
+
+                     {default} reduce 6
+
+State 121:
+     (33) actions_list ::= SYM *
+
+                     {default} reduce 33
+
+State 122:
+     (71) thing_bits_entry ::= exp COMMA exp COMMA SYM *
+
+                     {default} reduce 71
+
+State 123:
+     (34) actions_list ::= actions_list COMMA SYM *
+
+                     {default} reduce 34
+
+State 124:
+     (31) actions_def ::= Actions LBRACE actions_list RBRACE SEMICOLON *
+
+                     {default} reduce 31
+
+State 125:
+     (67) thing_bits_def ::= ThingBits LBRACE thing_bits_list RBRACE SEMICOLON *
+
+                     {default} reduce 67
+
+State 126:
+      (5) external_declaration ::= org_heights_def *
+
+                     {default} reduce 5
+
+State 127:
+     (70) thing_bits_list ::= thing_bits_list COMMA thing_bits_entry *
+
+                     {default} reduce 70
+
+State 128:
+     (69) thing_bits_list ::= thing_bits_entry *
+
+                     {default} reduce 69
+
+State 129:
+     (20) print_item ::= ENDL *
+
+                     {default} reduce 20
+
+State 130:
+      (4) external_declaration ::= actions_def *
+
+                     {default} reduce 4
+
+State 131:
+      (3) external_declaration ::= print_statement *
+
+                     {default} reduce 3
+
+State 132:
+     (30) exp ::= LPAREN exp RPAREN *
+
+                     {default} reduce 30
+
+State 133:
+     (76) render_styles_entry ::= exp COMMA SYM *
+
+                     {default} reduce 76
+
+State 134:
+     (51) state_map_def ::= StateMap LBRACE state_map_list RBRACE SEMICOLON *
+
+                     {default} reduce 51
+
+State 135:
+          exp ::= exp * PLUS exp
+          exp ::= exp * MINUS exp
+          exp ::= exp * MULTIPLY exp
+          exp ::= exp * DIVIDE exp
+          exp ::= exp * OR exp
+          exp ::= exp * AND exp
+          exp ::= exp * XOR exp
+     (29) exp ::= MINUS exp *
+
+                     {default} reduce 29
+
+State 136:
+     (72) render_styles_def ::= RenderStyles LBRACE render_styles_list RBRACE SEMICOLON *
+
+                     {default} reduce 72
+
+State 137:
+      (2) translation_unit ::= translation_unit external_declaration *
+
+                     {default} reduce 2
+
+State 138:
+     (75) render_styles_list ::= render_styles_list COMMA render_styles_entry *
+
+                     {default} reduce 75
+
+State 139:
+     (74) render_styles_list ::= render_styles_entry *
+
+                     {default} reduce 74
+

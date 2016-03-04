@@ -1,0 +1,2081 @@
+=======real: 298  avail: 34  game: 34
+run tic 0
+run tic 1
+run tic 2
+run tic 3
+run tic 4
+run tic 5
+run tic 6
+run tic 7
+run tic 8
+run tic 9
+run tic 10
+run tic 11
+run tic 12
+run tic 13
+run tic 14
+run tic 15
+run tic 16
+run tic 17
+run tic 18
+run tic 19
+run tic 20
+run tic 21
+run tic 22
+run tic 23
+run tic 24
+run tic 25
+run tic 26
+run tic 27
+run tic 28
+run tic 29
+run tic 30
+run tic 31
+run tic 32
+run tic 33
+=======real: 1  avail: 1  game: 1
+run tic 34
+=======real: 1  avail: 1  game: 1
+run tic 35
+=======real: 1  avail: 1  game: 1
+run tic 36
+=======real: 1  avail: 1  game: 1
+run tic 37
+=======real: 1  avail: 1  game: 1
+run tic 38
+=======real: 1  avail: 1  game: 1
+run tic 39
+=======real: 1  avail: 1  game: 1
+run tic 40
+=======real: 1  avail: 1  game: 1
+run tic 41
+=======real: 1  avail: 1  game: 1
+run tic 42
+=======real: 1  avail: 1  game: 1
+run tic 43
+=======real: 1  avail: 1  game: 1
+run tic 44
+=======real: 1  avail: 1  game: 1
+run tic 45
+=======real: 1  avail: 1  game: 1
+run tic 46
+=======real: 1  avail: 1  game: 1
+run tic 47
+=======real: 1  avail: 1  game: 1
+run tic 48
+=======real: 1  avail: 1  game: 1
+run tic 49
+=======real: 1  avail: 1  game: 1
+run tic 50
+=======real: 1  avail: 1  game: 1
+run tic 51
+=======real: 1  avail: 1  game: 1
+run tic 52
+=======real: 1  avail: 1  game: 1
+run tic 53
+=======real: 1  avail: 1  game: 1
+run tic 54
+=======real: 1  avail: 1  game: 1
+run tic 55
+=======real: 1  avail: 1  game: 1
+run tic 56
+=======real: 1  avail: 1  game: 1
+run tic 57
+=======real: 1  avail: 1  game: 1
+run tic 58
+=======real: 1  avail: 1  game: 1
+run tic 59
+=======real: 1  avail: 1  game: 1
+run tic 60
+=======real: 1  avail: 1  game: 1
+run tic 61
+=======real: 1  avail: 1  game: 1
+run tic 62
+=======real: 1  avail: 1  game: 1
+run tic 63
+=======real: 1  avail: 1  game: 1
+run tic 64
+=======real: 1  avail: 1  game: 1
+run tic 65
+=======real: 1  avail: 1  game: 1
+run tic 66
+=======real: 1  avail: 1  game: 1
+run tic 67
+=======real: 1  avail: 1  game: 1
+run tic 68
+=======real: 1  avail: 1  game: 1
+run tic 69
+=======real: 1  avail: 1  game: 1
+run tic 70
+=======real: 1  avail: 1  game: 1
+run tic 71
+=======real: 1  avail: 1  game: 1
+run tic 72
+=======real: 1  avail: 1  game: 1
+run tic 73
+=======real: 1  avail: 1  game: 1
+run tic 74
+=======real: 1  avail: 1  game: 1
+run tic 75
+=======real: 1  avail: 1  game: 1
+run tic 76
+=======real: 1  avail: 1  game: 1
+run tic 77
+=======real: 1  avail: 1  game: 1
+run tic 78
+=======real: 1  avail: 1  game: 1
+run tic 79
+=======real: 1  avail: 1  game: 1
+run tic 80
+=======real: 1  avail: 1  game: 1
+run tic 81
+=======real: 1  avail: 1  game: 1
+run tic 82
+=======real: 1  avail: 1  game: 1
+run tic 83
+=======real: 1  avail: 1  game: 1
+run tic 84
+=======real: 1  avail: 1  game: 1
+run tic 85
+=======real: 1  avail: 1  game: 1
+run tic 86
+=======real: 1  avail: 1  game: 1
+run tic 87
+=======real: 1  avail: 1  game: 1
+run tic 88
+=======real: 1  avail: 1  game: 1
+run tic 89
+=======real: 1  avail: 1  game: 1
+run tic 90
+=======real: 1  avail: 1  game: 1
+run tic 91
+=======real: 1  avail: 1  game: 1
+run tic 92
+=======real: 1  avail: 1  game: 1
+run tic 93
+=======real: 1  avail: 1  game: 1
+run tic 94
+=======real: 1  avail: 1  game: 1
+run tic 95
+=======real: 1  avail: 1  game: 1
+run tic 96
+=======real: 1  avail: 1  game: 1
+run tic 97
+=======real: 1  avail: 1  game: 1
+run tic 98
+=======real: 1  avail: 1  game: 1
+run tic 99
+=======real: 1  avail: 1  game: 1
+run tic 100
+=======real: 1  avail: 1  game: 1
+run tic 101
+=======real: 1  avail: 1  game: 1
+run tic 102
+=======real: 1  avail: 1  game: 1
+run tic 103
+=======real: 1  avail: 1  game: 1
+run tic 104
+=======real: 1  avail: 1  game: 1
+run tic 105
+=======real: 1  avail: 1  game: 1
+run tic 106
+=======real: 1  avail: 1  game: 1
+run tic 107
+=======real: 1  avail: 1  game: 1
+run tic 108
+=======real: 1  avail: 1  game: 1
+run tic 109
+=======real: 1  avail: 1  game: 1
+run tic 110
+=======real: 1  avail: 1  game: 1
+run tic 111
+=======real: 1  avail: 1  game: 1
+run tic 112
+=======real: 1  avail: 1  game: 1
+run tic 113
+=======real: 1  avail: 1  game: 1
+run tic 114
+=======real: 1  avail: 1  game: 1
+run tic 115
+=======real: 1  avail: 1  game: 1
+run tic 116
+=======real: 1  avail: 1  game: 1
+run tic 117
+=======real: 1  avail: 1  game: 1
+run tic 118
+=======real: 1  avail: 1  game: 1
+run tic 119
+=======real: 1  avail: 1  game: 1
+run tic 120
+=======real: 1  avail: 1  game: 1
+run tic 121
+=======real: 1  avail: 1  game: 1
+run tic 122
+=======real: 1  avail: 1  game: 1
+run tic 123
+=======real: 1  avail: 1  game: 1
+run tic 124
+=======real: 1  avail: 1  game: 1
+run tic 125
+=======real: 1  avail: 1  game: 1
+run tic 126
+=======real: 1  avail: 1  game: 1
+run tic 127
+=======real: 1  avail: 1  game: 1
+run tic 128
+=======real: 1  avail: 1  game: 1
+run tic 129
+=======real: 1  avail: 1  game: 1
+run tic 130
+=======real: 1  avail: 1  game: 1
+run tic 131
+=======real: 1  avail: 1  game: 1
+run tic 132
+=======real: 1  avail: 1  game: 1
+run tic 133
+=======real: 1  avail: 1  game: 1
+run tic 134
+=======real: 1  avail: 1  game: 1
+run tic 135
+=======real: 1  avail: 1  game: 1
+run tic 136
+=======real: 1  avail: 1  game: 1
+run tic 137
+=======real: 1  avail: 1  game: 1
+run tic 138
+=======real: 1  avail: 1  game: 1
+run tic 139
+=======real: 1  avail: 1  game: 1
+run tic 140
+=======real: 1  avail: 1  game: 1
+run tic 141
+=======real: 1  avail: 1  game: 1
+run tic 142
+=======real: 1  avail: 1  game: 1
+run tic 143
+=======real: 1  avail: 1  game: 1
+run tic 144
+=======real: 1  avail: 1  game: 1
+run tic 145
+=======real: 1  avail: 1  game: 1
+run tic 146
+=======real: 1  avail: 1  game: 1
+run tic 147
+=======real: 1  avail: 1  game: 1
+run tic 148
+=======real: 1  avail: 1  game: 1
+run tic 149
+=======real: 1  avail: 1  game: 1
+run tic 150
+=======real: 1  avail: 1  game: 1
+run tic 151
+=======real: 1  avail: 1  game: 1
+run tic 152
+=======real: 1  avail: 1  game: 1
+run tic 153
+=======real: 1  avail: 1  game: 1
+run tic 154
+=======real: 1  avail: 1  game: 1
+run tic 155
+=======real: 1  avail: 1  game: 1
+run tic 156
+=======real: 1  avail: 1  game: 1
+run tic 157
+=======real: 1  avail: 1  game: 1
+run tic 158
+=======real: 1  avail: 1  game: 1
+run tic 159
+=======real: 1  avail: 1  game: 1
+run tic 160
+=======real: 1  avail: 1  game: 1
+run tic 161
+=======real: 1  avail: 1  game: 1
+run tic 162
+=======real: 1  avail: 1  game: 1
+run tic 163
+=======real: 1  avail: 1  game: 1
+run tic 164
+=======real: 1  avail: 1  game: 1
+run tic 165
+=======real: 1  avail: 1  game: 1
+run tic 166
+=======real: 1  avail: 1  game: 1
+run tic 167
+=======real: 1  avail: 1  game: 1
+run tic 168
+=======real: 1  avail: 1  game: 1
+run tic 169
+=======real: 1  avail: 1  game: 1
+run tic 170
+=======real: 1  avail: 1  game: 1
+run tic 171
+=======real: 1  avail: 1  game: 1
+run tic 172
+=======real: 1  avail: 1  game: 1
+run tic 173
+=======real: 1  avail: 1  game: 1
+run tic 174
+=======real: 1  avail: 1  game: 1
+run tic 175
+=======real: 1  avail: 1  game: 1
+run tic 176
+=======real: 1  avail: 1  game: 1
+run tic 177
+=======real: 1  avail: 1  game: 1
+run tic 178
+=======real: 1  avail: 1  game: 1
+run tic 179
+=======real: 1  avail: 1  game: 1
+run tic 180
+=======real: 1  avail: 1  game: 1
+run tic 181
+=======real: 1  avail: 1  game: 1
+run tic 182
+=======real: 1  avail: 1  game: 1
+run tic 183
+=======real: 1  avail: 1  game: 1
+run tic 184
+=======real: 1  avail: 1  game: 1
+run tic 185
+=======real: 1  avail: 1  game: 1
+run tic 186
+=======real: 1  avail: 1  game: 1
+run tic 187
+=======real: 1  avail: 1  game: 1
+run tic 188
+=======real: 1  avail: 1  game: 1
+run tic 189
+=======real: 1  avail: 1  game: 1
+run tic 190
+=======real: 1  avail: 1  game: 1
+run tic 191
+=======real: 1  avail: 1  game: 1
+run tic 192
+=======real: 1  avail: 1  game: 1
+run tic 193
+=======real: 1  avail: 1  game: 1
+run tic 194
+=======real: 1  avail: 1  game: 1
+run tic 195
+=======real: 1  avail: 1  game: 1
+run tic 196
+=======real: 1  avail: 1  game: 1
+run tic 197
+=======real: 1  avail: 1  game: 1
+run tic 198
+=======real: 1  avail: 1  game: 1
+run tic 199
+=======real: 1  avail: 1  game: 1
+run tic 200
+=======real: 1  avail: 1  game: 1
+run tic 201
+=======real: 1  avail: 1  game: 1
+run tic 202
+=======real: 1  avail: 1  game: 1
+run tic 203
+=======real: 1  avail: 1  game: 1
+run tic 204
+=======real: 1  avail: 1  game: 1
+run tic 205
+=======real: 1  avail: 1  game: 1
+run tic 206
+=======real: 1  avail: 1  game: 1
+run tic 207
+=======real: 1  avail: 1  game: 1
+run tic 208
+=======real: 1  avail: 1  game: 1
+run tic 209
+=======real: 1  avail: 1  game: 1
+run tic 210
+=======real: 1  avail: 1  game: 1
+run tic 211
+=======real: 1  avail: 1  game: 1
+run tic 212
+=======real: 1  avail: 1  game: 1
+run tic 213
+=======real: 1  avail: 1  game: 1
+run tic 214
+=======real: 1  avail: 1  game: 1
+run tic 215
+=======real: 1  avail: 1  game: 1
+run tic 216
+=======real: 1  avail: 1  game: 1
+run tic 217
+=======real: 1  avail: 1  game: 1
+run tic 218
+=======real: 1  avail: 1  game: 1
+run tic 219
+=======real: 1  avail: 1  game: 1
+run tic 220
+=======real: 1  avail: 1  game: 1
+run tic 221
+=======real: 1  avail: 1  game: 1
+run tic 222
+=======real: 1  avail: 1  game: 1
+run tic 223
+=======real: 1  avail: 1  game: 1
+run tic 224
+=======real: 1  avail: 1  game: 1
+run tic 225
+=======real: 1  avail: 1  game: 1
+run tic 226
+=======real: 1  avail: 1  game: 1
+run tic 227
+=======real: 1  avail: 1  game: 1
+run tic 228
+=======real: 1  avail: 1  game: 1
+run tic 229
+=======real: 1  avail: 1  game: 1
+run tic 230
+=======real: 1  avail: 1  game: 1
+run tic 231
+=======real: 1  avail: 1  game: 1
+run tic 232
+=======real: 1  avail: 1  game: 1
+run tic 233
+=======real: 1  avail: 1  game: 1
+run tic 234
+=======real: 1  avail: 1  game: 1
+run tic 235
+=======real: 1  avail: 1  game: 1
+run tic 236
+=======real: 1  avail: 1  game: 1
+run tic 237
+=======real: 1  avail: 1  game: 1
+run tic 238
+=======real: 1  avail: 1  game: 1
+run tic 239
+=======real: 1  avail: 1  game: 1
+run tic 240
+=======real: 1  avail: 1  game: 1
+run tic 241
+=======real: 1  avail: 1  game: 1
+run tic 242
+=======real: 1  avail: 1  game: 1
+run tic 243
+=======real: 1  avail: 1  game: 1
+run tic 244
+=======real: 1  avail: 1  game: 1
+run tic 245
+=======real: 1  avail: 1  game: 1
+run tic 246
+=======real: 1  avail: 1  game: 1
+run tic 247
+=======real: 1  avail: 1  game: 1
+run tic 248
+=======real: 1  avail: 1  game: 1
+run tic 249
+=======real: 1  avail: 1  game: 1
+run tic 250
+=======real: 1  avail: 1  game: 1
+run tic 251
+=======real: 1  avail: 1  game: 1
+run tic 252
+=======real: 1  avail: 1  game: 1
+run tic 253
+=======real: 1  avail: 1  game: 1
+run tic 254
+=======real: 1  avail: 1  game: 1
+run tic 255
+=======real: 1  avail: 1  game: 1
+run tic 256
+=======real: 1  avail: 1  game: 1
+run tic 257
+=======real: 1  avail: 1  game: 1
+run tic 258
+=======real: 1  avail: 1  game: 1
+run tic 259
+=======real: 1  avail: 1  game: 1
+run tic 260
+=======real: 1  avail: 1  game: 1
+run tic 261
+=======real: 1  avail: 1  game: 1
+run tic 262
+=======real: 1  avail: 1  game: 1
+run tic 263
+=======real: 1  avail: 1  game: 1
+run tic 264
+=======real: 1  avail: 1  game: 1
+run tic 265
+=======real: 1  avail: 1  game: 1
+run tic 266
+=======real: 1  avail: 1  game: 1
+run tic 267
+=======real: 1  avail: 1  game: 1
+run tic 268
+=======real: 1  avail: 1  game: 1
+run tic 269
+=======real: 1  avail: 1  game: 1
+run tic 270
+=======real: 1  avail: 1  game: 1
+run tic 271
+=======real: 1  avail: 1  game: 1
+run tic 272
+=======real: 1  avail: 1  game: 1
+run tic 273
+=======real: 1  avail: 1  game: 1
+run tic 274
+=======real: 1  avail: 1  game: 1
+run tic 275
+=======real: 1  avail: 1  game: 1
+run tic 276
+=======real: 1  avail: 1  game: 1
+run tic 277
+=======real: 1  avail: 1  game: 1
+run tic 278
+=======real: 1  avail: 1  game: 1
+run tic 279
+=======real: 1  avail: 1  game: 1
+run tic 280
+=======real: 1  avail: 1  game: 1
+run tic 281
+=======real: 1  avail: 1  game: 1
+run tic 282
+=======real: 1  avail: 1  game: 1
+run tic 283
+=======real: 1  avail: 1  game: 1
+run tic 284
+=======real: 1  avail: 1  game: 1
+run tic 285
+=======real: 1  avail: 1  game: 1
+run tic 286
+=======real: 1  avail: 1  game: 1
+run tic 287
+=======real: 1  avail: 1  game: 1
+run tic 288
+=======real: 1  avail: 1  game: 1
+run tic 289
+=======real: 1  avail: 1  game: 1
+run tic 290
+=======real: 1  avail: 1  game: 1
+run tic 291
+=======real: 1  avail: 1  game: 1
+run tic 292
+=======real: 1  avail: 1  game: 1
+run tic 293
+=======real: 1  avail: 1  game: 1
+run tic 294
+=======real: 1  avail: 1  game: 1
+run tic 295
+=======real: 1  avail: 1  game: 1
+run tic 296
+=======real: 1  avail: 1  game: 1
+run tic 297
+=======real: 1  avail: 1  game: 1
+run tic 298
+=======real: 1  avail: 1  game: 1
+run tic 299
+=======real: 1  avail: 1  game: 1
+run tic 300
+=======real: 1  avail: 1  game: 1
+run tic 301
+=======real: 1  avail: 1  game: 1
+run tic 302
+=======real: 1  avail: 1  game: 1
+run tic 303
+=======real: 1  avail: 1  game: 1
+run tic 304
+=======real: 1  avail: 1  game: 1
+run tic 305
+=======real: 1  avail: 1  game: 1
+run tic 306
+=======real: 1  avail: 1  game: 1
+run tic 307
+=======real: 1  avail: 1  game: 1
+run tic 308
+=======real: 1  avail: 1  game: 1
+run tic 309
+=======real: 1  avail: 1  game: 1
+run tic 310
+=======real: 1  avail: 1  game: 1
+run tic 311
+=======real: 1  avail: 1  game: 1
+run tic 312
+=======real: 1  avail: 1  game: 1
+run tic 313
+=======real: 1  avail: 1  game: 1
+run tic 314
+=======real: 1  avail: 1  game: 1
+run tic 315
+=======real: 1  avail: 1  game: 1
+run tic 316
+=======real: 1  avail: 1  game: 1
+run tic 317
+=======real: 1  avail: 1  game: 1
+run tic 318
+=======real: 1  avail: 1  game: 1
+run tic 319
+=======real: 1  avail: 1  game: 1
+run tic 320
+=======real: 1  avail: 1  game: 1
+run tic 321
+=======real: 1  avail: 1  game: 1
+run tic 322
+=======real: 1  avail: 1  game: 1
+run tic 323
+=======real: 1  avail: 1  game: 1
+run tic 324
+=======real: 1  avail: 1  game: 1
+run tic 325
+=======real: 1  avail: 1  game: 1
+run tic 326
+=======real: 1  avail: 1  game: 1
+run tic 327
+=======real: 1  avail: 1  game: 1
+run tic 328
+=======real: 1  avail: 1  game: 1
+run tic 329
+=======real: 1  avail: 1  game: 1
+run tic 330
+=======real: 1  avail: 1  game: 1
+run tic 331
+=======real: 1  avail: 1  game: 1
+run tic 332
+=======real: 1  avail: 1  game: 1
+run tic 333
+=======real: 1  avail: 1  game: 1
+run tic 334
+=======real: 1  avail: 1  game: 1
+run tic 335
+=======real: 1  avail: 1  game: 1
+run tic 336
+=======real: 1  avail: 1  game: 1
+run tic 337
+=======real: 1  avail: 1  game: 1
+run tic 338
+=======real: 1  avail: 1  game: 1
+run tic 339
+=======real: 4  avail: 4  game: 4
+run tic 340
+run tic 341
+run tic 342
+run tic 343
+=======real: 1  avail: 1  game: 1
+run tic 344
+=======real: 1  avail: 1  game: 1
+run tic 345
+=======real: 1  avail: 1  game: 1
+run tic 346
+=======real: 1  avail: 1  game: 1
+run tic 347
+=======real: 1  avail: 1  game: 1
+run tic 348
+=======real: 1  avail: 1  game: 1
+run tic 349
+=======real: 1  avail: 1  game: 1
+run tic 350
+=======real: 1  avail: 1  game: 1
+run tic 351
+=======real: 1  avail: 1  game: 1
+run tic 352
+=======real: 1  avail: 1  game: 1
+run tic 353
+=======real: 1  avail: 1  game: 1
+run tic 354
+=======real: 1  avail: 1  game: 1
+run tic 355
+=======real: 1  avail: 1  game: 1
+run tic 356
+=======real: 1  avail: 1  game: 1
+run tic 357
+=======real: 1  avail: 1  game: 1
+run tic 358
+=======real: 1  avail: 1  game: 1
+run tic 359
+=======real: 1  avail: 1  game: 1
+run tic 360
+=======real: 1  avail: 1  game: 1
+run tic 361
+=======real: 1  avail: 1  game: 1
+run tic 362
+=======real: 1  avail: 1  game: 1
+run tic 363
+=======real: 1  avail: 1  game: 1
+run tic 364
+=======real: 1  avail: 1  game: 1
+run tic 365
+=======real: 1  avail: 1  game: 1
+run tic 366
+=======real: 1  avail: 1  game: 1
+run tic 367
+=======real: 1  avail: 1  game: 1
+run tic 368
+=======real: 1  avail: 1  game: 1
+run tic 369
+=======real: 1  avail: 1  game: 1
+run tic 370
+=======real: 1  avail: 1  game: 1
+run tic 371
+=======real: 1  avail: 1  game: 1
+run tic 372
+=======real: 1  avail: 1  game: 1
+run tic 373
+=======real: 1  avail: 1  game: 1
+run tic 374
+=======real: 1  avail: 1  game: 1
+run tic 375
+=======real: 1  avail: 1  game: 1
+run tic 376
+=======real: 1  avail: 1  game: 1
+run tic 377
+=======real: 1  avail: 1  game: 1
+run tic 378
+=======real: 1  avail: 1  game: 1
+run tic 379
+=======real: 1  avail: 1  game: 1
+run tic 380
+=======real: 1  avail: 1  game: 1
+run tic 381
+=======real: 1  avail: 1  game: 1
+run tic 382
+=======real: 1  avail: 1  game: 1
+run tic 383
+=======real: 1  avail: 1  game: 1
+run tic 384
+=======real: 1  avail: 1  game: 1
+run tic 385
+=======real: 1  avail: 1  game: 1
+run tic 386
+=======real: 1  avail: 1  game: 1
+run tic 387
+=======real: 1  avail: 1  game: 1
+run tic 388
+=======real: 1  avail: 1  game: 1
+run tic 389
+=======real: 1  avail: 1  game: 1
+run tic 390
+=======real: 1  avail: 1  game: 1
+run tic 391
+=======real: 1  avail: 1  game: 1
+run tic 392
+=======real: 1  avail: 1  game: 1
+run tic 393
+=======real: 1  avail: 1  game: 1
+run tic 394
+=======real: 1  avail: 1  game: 1
+run tic 395
+=======real: 1  avail: 1  game: 1
+run tic 396
+=======real: 1  avail: 1  game: 1
+run tic 397
+=======real: 1  avail: 1  game: 1
+run tic 398
+=======real: 1  avail: 1  game: 1
+run tic 399
+=======real: 1  avail: 1  game: 1
+run tic 400
+=======real: 1  avail: 1  game: 1
+run tic 401
+=======real: 1  avail: 1  game: 1
+run tic 402
+=======real: 1  avail: 1  game: 1
+run tic 403
+=======real: 1  avail: 1  game: 1
+run tic 404
+=======real: 1  avail: 1  game: 1
+run tic 405
+=======real: 1  avail: 1  game: 1
+run tic 406
+=======real: 1  avail: 1  game: 1
+run tic 407
+=======real: 1  avail: 1  game: 1
+run tic 408
+=======real: 1  avail: 1  game: 1
+run tic 409
+=======real: 1  avail: 1  game: 1
+run tic 410
+=======real: 1  avail: 1  game: 1
+run tic 411
+=======real: 1  avail: 1  game: 1
+run tic 412
+=======real: 1  avail: 1  game: 1
+run tic 413
+=======real: 1  avail: 1  game: 1
+run tic 414
+=======real: 1  avail: 1  game: 1
+run tic 415
+=======real: 1  avail: 1  game: 1
+run tic 416
+=======real: 1  avail: 1  game: 1
+run tic 417
+=======real: 1  avail: 1  game: 1
+run tic 418
+=======real: 1  avail: 1  game: 1
+run tic 419
+=======real: 1  avail: 1  game: 1
+run tic 420
+=======real: 1  avail: 1  game: 1
+run tic 421
+=======real: 1  avail: 1  game: 1
+run tic 422
+=======real: 1  avail: 1  game: 1
+run tic 423
+=======real: 1  avail: 1  game: 1
+run tic 424
+=======real: 1  avail: 1  game: 1
+run tic 425
+=======real: 1  avail: 1  game: 1
+run tic 426
+=======real: 1  avail: 1  game: 1
+run tic 427
+=======real: 1  avail: 1  game: 1
+run tic 428
+=======real: 1  avail: 1  game: 1
+run tic 429
+=======real: 1  avail: 1  game: 1
+run tic 430
+=======real: 1  avail: 1  game: 1
+run tic 431
+=======real: 1  avail: 1  game: 1
+run tic 432
+=======real: 1  avail: 1  game: 1
+run tic 433
+=======real: 1  avail: 1  game: 1
+run tic 434
+=======real: 1  avail: 1  game: 1
+run tic 435
+=======real: 1  avail: 1  game: 1
+run tic 436
+=======real: 1  avail: 1  game: 1
+run tic 437
+=======real: 1  avail: 1  game: 1
+run tic 438
+=======real: 1  avail: 1  game: 1
+run tic 439
+=======real: 1  avail: 1  game: 1
+run tic 440
+=======real: 1  avail: 1  game: 1
+run tic 441
+=======real: 1  avail: 1  game: 1
+run tic 442
+=======real: 1  avail: 1  game: 1
+run tic 443
+=======real: 1  avail: 1  game: 1
+run tic 444
+=======real: 1  avail: 1  game: 1
+run tic 445
+=======real: 1  avail: 1  game: 1
+run tic 446
+=======real: 1  avail: 1  game: 1
+run tic 447
+=======real: 1  avail: 1  game: 1
+run tic 448
+=======real: 1  avail: 1  game: 1
+run tic 449
+=======real: 1  avail: 1  game: 1
+run tic 450
+=======real: 1  avail: 1  game: 1
+run tic 451
+=======real: 1  avail: 1  game: 1
+run tic 452
+=======real: 1  avail: 1  game: 1
+run tic 453
+=======real: 1  avail: 1  game: 1
+run tic 454
+=======real: 1  avail: 1  game: 1
+run tic 455
+=======real: 1  avail: 1  game: 1
+run tic 456
+=======real: 1  avail: 1  game: 1
+run tic 457
+=======real: 1  avail: 1  game: 1
+run tic 458
+=======real: 1  avail: 1  game: 1
+run tic 459
+=======real: 1  avail: 1  game: 1
+run tic 460
+=======real: 1  avail: 1  game: 1
+run tic 461
+=======real: 1  avail: 1  game: 1
+run tic 462
+=======real: 1  avail: 1  game: 1
+run tic 463
+=======real: 1  avail: 1  game: 1
+run tic 464
+=======real: 1  avail: 1  game: 1
+run tic 465
+=======real: 1  avail: 1  game: 1
+run tic 466
+=======real: 1  avail: 1  game: 1
+run tic 467
+=======real: 1  avail: 1  game: 1
+run tic 468
+=======real: 1  avail: 1  game: 1
+run tic 469
+=======real: 1  avail: 1  game: 1
+run tic 470
+=======real: 1  avail: 1  game: 1
+run tic 471
+=======real: 1  avail: 1  game: 1
+run tic 472
+=======real: 1  avail: 1  game: 1
+run tic 473
+=======real: 1  avail: 1  game: 1
+run tic 474
+=======real: 1  avail: 1  game: 1
+run tic 475
+=======real: 1  avail: 1  game: 1
+run tic 476
+=======real: 1  avail: 1  game: 1
+run tic 477
+=======real: 1  avail: 1  game: 1
+run tic 478
+=======real: 1  avail: 1  game: 1
+run tic 479
+=======real: 1  avail: 1  game: 1
+run tic 480
+=======real: 1  avail: 1  game: 1
+run tic 481
+=======real: 1  avail: 1  game: 1
+run tic 482
+=======real: 1  avail: 1  game: 1
+run tic 483
+=======real: 1  avail: 1  game: 1
+run tic 484
+=======real: 1  avail: 1  game: 1
+run tic 485
+=======real: 1  avail: 1  game: 1
+run tic 486
+=======real: 1  avail: 1  game: 1
+run tic 487
+=======real: 1  avail: 1  game: 1
+run tic 488
+=======real: 1  avail: 1  game: 1
+run tic 489
+=======real: 1  avail: 1  game: 1
+run tic 490
+=======real: 1  avail: 1  game: 1
+run tic 491
+=======real: 1  avail: 1  game: 1
+run tic 492
+=======real: 1  avail: 1  game: 1
+run tic 493
+=======real: 1  avail: 1  game: 1
+run tic 494
+=======real: 1  avail: 1  game: 1
+run tic 495
+=======real: 1  avail: 1  game: 1
+run tic 496
+=======real: 1  avail: 1  game: 1
+run tic 497
+=======real: 1  avail: 1  game: 1
+run tic 498
+=======real: 1  avail: 1  game: 1
+run tic 499
+=======real: 1  avail: 1  game: 1
+run tic 500
+=======real: 1  avail: 1  game: 1
+run tic 501
+=======real: 1  avail: 1  game: 1
+run tic 502
+=======real: 1  avail: 1  game: 1
+run tic 503
+=======real: 1  avail: 1  game: 1
+run tic 504
+=======real: 1  avail: 1  game: 1
+run tic 505
+=======real: 1  avail: 1  game: 1
+run tic 506
+=======real: 1  avail: 1  game: 1
+run tic 507
+=======real: 1  avail: 1  game: 1
+run tic 508
+=======real: 1  avail: 1  game: 1
+run tic 509
+=======real: 1  avail: 1  game: 1
+run tic 510
+=======real: 1  avail: 1  game: 1
+run tic 511
+=======real: 1  avail: 1  game: 1
+run tic 512
+=======real: 1  avail: 1  game: 1
+run tic 513
+=======real: 1  avail: 1  game: 1
+run tic 514
+=======real: 1  avail: 1  game: 1
+run tic 515
+=======real: 1  avail: 1  game: 1
+run tic 516
+=======real: 1  avail: 1  game: 1
+run tic 517
+=======real: 1  avail: 1  game: 1
+run tic 518
+=======real: 1  avail: 1  game: 1
+run tic 519
+=======real: 1  avail: 1  game: 1
+run tic 520
+=======real: 1  avail: 1  game: 1
+run tic 521
+=======real: 1  avail: 1  game: 1
+run tic 522
+=======real: 1  avail: 1  game: 1
+run tic 523
+=======real: 1  avail: 1  game: 1
+run tic 524
+=======real: 1  avail: 1  game: 1
+run tic 525
+=======real: 1  avail: 1  game: 1
+run tic 526
+=======real: 1  avail: 1  game: 1
+run tic 527
+=======real: 1  avail: 1  game: 1
+run tic 528
+=======real: 1  avail: 1  game: 1
+run tic 529
+=======real: 1  avail: 1  game: 1
+run tic 530
+=======real: 1  avail: 1  game: 1
+run tic 531
+=======real: 1  avail: 1  game: 1
+run tic 532
+=======real: 1  avail: 1  game: 1
+run tic 533
+=======real: 1  avail: 1  game: 1
+run tic 534
+=======real: 1  avail: 1  game: 1
+run tic 535
+=======real: 1  avail: 1  game: 1
+run tic 536
+=======real: 1  avail: 1  game: 1
+run tic 537
+=======real: 1  avail: 1  game: 1
+run tic 538
+=======real: 1  avail: 1  game: 1
+run tic 539
+=======real: 1  avail: 1  game: 1
+run tic 540
+=======real: 1  avail: 1  game: 1
+run tic 541
+=======real: 1  avail: 1  game: 1
+run tic 542
+=======real: 1  avail: 1  game: 1
+run tic 543
+=======real: 1  avail: 1  game: 1
+run tic 544
+=======real: 1  avail: 1  game: 1
+run tic 545
+=======real: 1  avail: 1  game: 1
+run tic 546
+=======real: 1  avail: 1  game: 1
+run tic 547
+=======real: 1  avail: 1  game: 1
+run tic 548
+=======real: 1  avail: 1  game: 1
+run tic 549
+=======real: 1  avail: 1  game: 1
+run tic 550
+=======real: 1  avail: 1  game: 1
+run tic 551
+=======real: 1  avail: 1  game: 1
+run tic 552
+=======real: 1  avail: 1  game: 1
+run tic 553
+=======real: 1  avail: 1  game: 1
+run tic 554
+=======real: 1  avail: 1  game: 1
+run tic 555
+=======real: 1  avail: 1  game: 1
+run tic 556
+=======real: 1  avail: 1  game: 1
+run tic 557
+=======real: 1  avail: 1  game: 1
+run tic 558
+=======real: 1  avail: 1  game: 1
+run tic 559
+=======real: 1  avail: 1  game: 1
+run tic 560
+=======real: 1  avail: 1  game: 1
+run tic 561
+=======real: 1  avail: 1  game: 1
+run tic 562
+=======real: 1  avail: 1  game: 1
+run tic 563
+=======real: 1  avail: 1  game: 1
+run tic 564
+=======real: 1  avail: 1  game: 1
+run tic 565
+=======real: 1  avail: 1  game: 1
+run tic 566
+=======real: 1  avail: 1  game: 1
+run tic 567
+=======real: 1  avail: 1  game: 1
+run tic 568
+=======real: 1  avail: 1  game: 1
+run tic 569
+=======real: 1  avail: 1  game: 1
+run tic 570
+=======real: 1  avail: 1  game: 1
+run tic 571
+=======real: 1  avail: 1  game: 1
+run tic 572
+=======real: 1  avail: 1  game: 1
+run tic 573
+=======real: 1  avail: 1  game: 1
+run tic 574
+=======real: 1  avail: 1  game: 1
+run tic 575
+=======real: 1  avail: 1  game: 1
+run tic 576
+=======real: 1  avail: 1  game: 1
+run tic 577
+=======real: 1  avail: 1  game: 1
+run tic 578
+=======real: 1  avail: 1  game: 1
+run tic 579
+=======real: 1  avail: 1  game: 1
+run tic 580
+=======real: 1  avail: 1  game: 1
+run tic 581
+=======real: 1  avail: 1  game: 1
+run tic 582
+=======real: 1  avail: 1  game: 1
+run tic 583
+=======real: 1  avail: 1  game: 1
+run tic 584
+=======real: 1  avail: 1  game: 1
+run tic 585
+=======real: 1  avail: 1  game: 1
+run tic 586
+=======real: 1  avail: 1  game: 1
+run tic 587
+=======real: 1  avail: 1  game: 1
+run tic 588
+=======real: 1  avail: 1  game: 1
+run tic 589
+=======real: 1  avail: 1  game: 1
+run tic 590
+=======real: 1  avail: 1  game: 1
+run tic 591
+=======real: 1  avail: 1  game: 1
+run tic 592
+=======real: 1  avail: 1  game: 1
+run tic 593
+=======real: 1  avail: 1  game: 1
+run tic 594
+=======real: 1  avail: 1  game: 1
+run tic 595
+=======real: 1  avail: 1  game: 1
+run tic 596
+=======real: 1  avail: 1  game: 1
+run tic 597
+=======real: 1  avail: 1  game: 1
+run tic 598
+=======real: 1  avail: 1  game: 1
+run tic 599
+=======real: 1  avail: 1  game: 1
+run tic 600
+=======real: 1  avail: 1  game: 1
+run tic 601
+=======real: 1  avail: 1  game: 1
+run tic 602
+=======real: 1  avail: 1  game: 1
+run tic 603
+=======real: 1  avail: 1  game: 1
+run tic 604
+=======real: 1  avail: 1  game: 1
+run tic 605
+=======real: 1  avail: 1  game: 1
+run tic 606
+=======real: 1  avail: 1  game: 1
+run tic 607
+=======real: 1  avail: 1  game: 1
+run tic 608
+=======real: 1  avail: 1  game: 1
+run tic 609
+=======real: 1  avail: 1  game: 1
+run tic 610
+=======real: 1  avail: 1  game: 1
+run tic 611
+=======real: 1  avail: 1  game: 1
+run tic 612
+=======real: 1  avail: 1  game: 1
+run tic 613
+=======real: 1  avail: 1  game: 1
+run tic 614
+=======real: 1  avail: 1  game: 1
+run tic 615
+=======real: 1  avail: 1  game: 1
+run tic 616
+=======real: 1  avail: 1  game: 1
+run tic 617
+=======real: 1  avail: 1  game: 1
+run tic 618
+=======real: 1  avail: 1  game: 1
+run tic 619
+=======real: 1  avail: 1  game: 1
+run tic 620
+=======real: 1  avail: 1  game: 1
+run tic 621
+=======real: 1  avail: 1  game: 1
+run tic 622
+=======real: 1  avail: 1  game: 1
+run tic 623
+=======real: 1  avail: 1  game: 1
+run tic 624
+=======real: 1  avail: 1  game: 1
+run tic 625
+=======real: 1  avail: 1  game: 1
+run tic 626
+=======real: 1  avail: 1  game: 1
+run tic 627
+=======real: 1  avail: 1  game: 1
+run tic 628
+=======real: 1  avail: 1  game: 1
+run tic 629
+=======real: 1  avail: 1  game: 1
+run tic 630
+=======real: 1  avail: 1  game: 1
+run tic 631
+=======real: 1  avail: 1  game: 1
+run tic 632
+=======real: 1  avail: 1  game: 1
+run tic 633
+=======real: 1  avail: 1  game: 1
+run tic 634
+=======real: 1  avail: 1  game: 1
+run tic 635
+=======real: 1  avail: 1  game: 1
+run tic 636
+=======real: 1  avail: 1  game: 1
+run tic 637
+=======real: 1  avail: 1  game: 1
+run tic 638
+=======real: 1  avail: 1  game: 1
+run tic 639
+=======real: 1  avail: 1  game: 1
+run tic 640
+=======real: 1  avail: 1  game: 1
+run tic 641
+=======real: 1  avail: 1  game: 1
+run tic 642
+=======real: 1  avail: 1  game: 1
+run tic 643
+=======real: 1  avail: 1  game: 1
+run tic 644
+=======real: 1  avail: 1  game: 1
+run tic 645
+=======real: 1  avail: 1  game: 1
+run tic 646
+=======real: 1  avail: 1  game: 1
+run tic 647
+=======real: 1  avail: 1  game: 1
+run tic 648
+=======real: 1  avail: 1  game: 1
+run tic 649
+=======real: 1  avail: 1  game: 1
+run tic 650
+=======real: 1  avail: 1  game: 1
+run tic 651
+=======real: 1  avail: 1  game: 1
+run tic 652
+=======real: 1  avail: 1  game: 1
+run tic 653
+=======real: 1  avail: 1  game: 1
+run tic 654
+=======real: 1  avail: 1  game: 1
+run tic 655
+=======real: 1  avail: 1  game: 1
+run tic 656
+=======real: 1  avail: 1  game: 1
+run tic 657
+=======real: 1  avail: 1  game: 1
+run tic 658
+=======real: 1  avail: 1  game: 1
+run tic 659
+=======real: 1  avail: 1  game: 1
+run tic 660
+=======real: 1  avail: 1  game: 1
+run tic 661
+=======real: 1  avail: 1  game: 1
+run tic 662
+=======real: 1  avail: 1  game: 1
+run tic 663
+=======real: 1  avail: 1  game: 1
+run tic 664
+=======real: 1  avail: 1  game: 1
+run tic 665
+=======real: 1  avail: 1  game: 1
+run tic 666
+=======real: 1  avail: 1  game: 1
+run tic 667
+=======real: 1  avail: 1  game: 1
+run tic 668
+=======real: 1  avail: 1  game: 1
+run tic 669
+=======real: 1  avail: 1  game: 1
+run tic 670
+=======real: 1  avail: 1  game: 1
+run tic 671
+=======real: 1  avail: 1  game: 1
+run tic 672
+=======real: 1  avail: 1  game: 1
+run tic 673
+=======real: 1  avail: 1  game: 1
+run tic 674
+=======real: 1  avail: 1  game: 1
+run tic 675
+=======real: 1  avail: 1  game: 1
+run tic 676
+=======real: 1  avail: 1  game: 1
+run tic 677
+=======real: 1  avail: 1  game: 1
+run tic 678
+=======real: 1  avail: 1  game: 1
+run tic 679
+=======real: 1  avail: 1  game: 1
+run tic 680
+=======real: 1  avail: 1  game: 1
+run tic 681
+=======real: 1  avail: 1  game: 1
+run tic 682
+=======real: 1  avail: 1  game: 1
+run tic 683
+=======real: 1  avail: 1  game: 1
+run tic 684
+=======real: 1  avail: 1  game: 1
+run tic 685
+=======real: 1  avail: 1  game: 1
+run tic 686
+=======real: 1  avail: 1  game: 1
+run tic 687
+=======real: 1  avail: 1  game: 1
+run tic 688
+=======real: 1  avail: 1  game: 1
+run tic 689
+=======real: 1  avail: 1  game: 1
+run tic 690
+=======real: 1  avail: 1  game: 1
+run tic 691
+=======real: 1  avail: 1  game: 1
+run tic 692
+=======real: 1  avail: 1  game: 1
+run tic 693
+=======real: 1  avail: 1  game: 1
+run tic 694
+=======real: 1  avail: 1  game: 1
+run tic 695
+=======real: 1  avail: 1  game: 1
+run tic 696
+=======real: 1  avail: 1  game: 1
+run tic 697
+=======real: 1  avail: 1  game: 1
+run tic 698
+=======real: 1  avail: 1  game: 1
+run tic 699
+=======real: 1  avail: 1  game: 1
+run tic 700
+=======real: 1  avail: 1  game: 1
+run tic 701
+=======real: 1  avail: 1  game: 1
+run tic 702
+=======real: 1  avail: 1  game: 1
+run tic 703
+=======real: 1  avail: 1  game: 1
+run tic 704
+=======real: 1  avail: 1  game: 1
+run tic 705
+=======real: 1  avail: 1  game: 1
+run tic 706
+=======real: 1  avail: 1  game: 1
+run tic 707
+=======real: 1  avail: 1  game: 1
+run tic 708
+=======real: 1  avail: 1  game: 1
+run tic 709
+=======real: 1  avail: 1  game: 1
+run tic 710
+=======real: 1  avail: 1  game: 1
+run tic 711
+=======real: 1  avail: 1  game: 1
+run tic 712
+=======real: 1  avail: 1  game: 1
+run tic 713
+=======real: 1  avail: 1  game: 1
+run tic 714
+=======real: 1  avail: 1  game: 1
+run tic 715
+=======real: 1  avail: 1  game: 1
+run tic 716
+=======real: 1  avail: 1  game: 1
+run tic 717
+=======real: 1  avail: 1  game: 1
+run tic 718
+=======real: 1  avail: 1  game: 1
+run tic 719
+=======real: 1  avail: 1  game: 1
+run tic 720
+=======real: 1  avail: 1  game: 1
+run tic 721
+=======real: 1  avail: 1  game: 1
+run tic 722
+=======real: 1  avail: 1  game: 1
+run tic 723
+=======real: 1  avail: 1  game: 1
+run tic 724
+=======real: 1  avail: 1  game: 1
+run tic 725
+=======real: 1  avail: 1  game: 1
+run tic 726
+=======real: 1  avail: 1  game: 1
+run tic 727
+=======real: 1  avail: 1  game: 1
+run tic 728
+=======real: 1  avail: 1  game: 1
+run tic 729
+=======real: 1  avail: 1  game: 1
+run tic 730
+=======real: 1  avail: 1  game: 1
+run tic 731
+=======real: 1  avail: 1  game: 1
+run tic 732
+=======real: 1  avail: 1  game: 1
+run tic 733
+=======real: 1  avail: 1  game: 1
+run tic 734
+=======real: 1  avail: 1  game: 1
+run tic 735
+=======real: 1  avail: 1  game: 1
+run tic 736
+=======real: 1  avail: 1  game: 1
+run tic 737
+=======real: 1  avail: 1  game: 1
+run tic 738
+=======real: 1  avail: 1  game: 1
+run tic 739
+=======real: 1  avail: 1  game: 1
+run tic 740
+=======real: 1  avail: 1  game: 1
+run tic 741
+=======real: 1  avail: 1  game: 1
+run tic 742
+=======real: 1  avail: 1  game: 1
+run tic 743
+=======real: 1  avail: 1  game: 1
+run tic 744
+=======real: 1  avail: 1  game: 1
+run tic 745
+=======real: 1  avail: 1  game: 1
+run tic 746
+=======real: 1  avail: 1  game: 1
+run tic 747
+=======real: 1  avail: 1  game: 1
+run tic 748
+=======real: 1  avail: 1  game: 1
+run tic 749
+=======real: 1  avail: 1  game: 1
+run tic 750
+=======real: 1  avail: 1  game: 1
+run tic 751
+=======real: 1  avail: 1  game: 1
+run tic 752
+Command: CONNECT_READY
+End parsing packet.
+Unknown command: 204
+End parsing packet.
+Command: SVC_BEGINSNAPSHOT
+Command: SVC_PRINT
+Command: SVC_SETCONSOLEPLAYER
+Command: SVC_SETGAMEDMFLAGS
+Command: SVC_SETGAMESKILL
+Command: SVC_SETGAMEMODE
+Command: SVC_SETGAMEMODELIMITS
+Command: SVC_MAPLOAD
+Command: SVC_SETMAPMUSIC
+Command: SVC_PRINTMOTD
+Command: SVC_SPAWNPLAYER
+Command: SVC_DOSECTORLIGHTLIGHTFLASH
+Command: SVC_DOSECTORLIGHTSTROBE
+Command: SVC_DOSECTORLIGHTGLOW
+Command: SVC_DOSECTORLIGHTGLOW
+Command: SVC_SETPLAYERPOINTS
+Command: SVC_SETPLAYERKILLCOUNT
+Command: SVC_SETPLAYERKILLCOUNT
+Command: SVC_SETPLAYERKILLCOUNT
+Command: SVC_SETPLAYERKILLCOUNT
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+End parsing packet.
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETWEAPONAMMOGIVE
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETWEAPONAMMOGIVE
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETWEAPONAMMOGIVE
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SPAWNTHING
+Command: SVC_SETWEAPONAMMOGIVE
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+End parsing packet.
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+monstertype: DoomImp
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+monstertype: ZombieMan
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+monstertype: FoxImp
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+monstertype: RapidFireTrooper
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+Command: SVC_SPAWNTHING
+Command: SVC_SETTHINGANGLE
+End parsing packet.
+Command: SVC_SPAWNTHING
+Command: SVC_PRINT
+Command: SVC_ENDSNAPSHOT
+End parsing packet.
+Command: SVC_PING
+Command: SVC_NOTHING
+End parsing packet.
+Command: SVC_PRINT
+Command: SVC_SPAWNPLAYER
+Command: SVC_SETPLAYERLAGGINGSTATUS
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_SETPLAYERLAGGINGSTATUS
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_UPDATEPLAYERPING
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_PING
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_PING
+Command: SVC_MOVELOCALPLAYER
+Command: SVC_UPDATEPLAYERPING
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_PING
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_UPDATEPLAYERPING
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_PING
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_UPDATEPLAYERPING
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_PING
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
+Command: SVC_MOVELOCALPLAYER
+End parsing packet.
