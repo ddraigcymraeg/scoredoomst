@@ -1,0 +1,33 @@
+112: 112
+MAP01: Renewed Faith
+MAP02: Slugfest
+MAP03: Three is a Charm
+MAP04: Polluted Paths
+MAP05: Installation Decrepit
+MAP06: Survival Instincts
+MAP07: Hoedown
+MAP08: Cold Reception
+MAP09: Ochregerde
+MAP10: Inner Fear
+MAP11: The Grotto
+MAP12: Nectar of the Gods
+MAP13: Viral Implant
+MAP14: Downriver
+MAP15: Decomposition
+MAP16: The Forgotten Base
+MAP17: Metastasize
+MAP18: Suburbia
+MAP19: Technoprison
+MAP20: Interstellar Sickness
+MAP21: Shaman's Device
+MAP22: Hell's Limits
+MAP23: Melting Universe II
+MAP24: Detachment
+MAP25: Nightmare Complex
+MAP26: Reaper's Digest
+MAP27: Vulcana II
+MAP28: Crucifix Held Close
+MAP29: Spiritual Holocaust
+MAP30: Ragnarok
+MAP31: Mortar Combat
+MAP32: Mutare

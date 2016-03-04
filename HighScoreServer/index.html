@@ -1,0 +1,1419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<script>
+
+//Input the IDs of the IFRAMES you wish to dynamically resize to match its content height:
+//Separate each ID with a comma. Examples: ["myframe1", "myframe2"] or ["myframe"] or [] for none:
+var iframeids=["sdcontent"]
+
+//Should script hide iframe from browsers that don't support this script (non IE5+/NS6+ browsers. Recommended):
+var iframehide="no"
+
+var getFFVersion=navigator.userAgent.substring(navigator.userAgent.indexOf("Firefox")).split("/")[1]
+var FFextraHeight=parseFloat(getFFVersion)>=0.1? 3 : 0 //extra height in px to add to iframe in FireFox 1.0+ browsers
+
+function resizeCaller() {
+var dyniframe=new Array()
+for (i=0; i<iframeids.length; i++){
+if (document.getElementById)
+resizeIframe(iframeids)
+//reveal iframe for lower end browsers? (see var above):
+if ((document.all || document.getElementById) && iframehide=="no"){
+var tempobj=document.all? document.all[iframeids] : document.getElementById(iframeids)
+tempobj.style.display="block"
+}
+}
+}
+
+function resizeIframe(frameid){
+var currentfr=document.getElementById(frameid)
+if (currentfr && !window.opera){
+currentfr.style.display="block"
+if (currentfr.contentDocument && currentfr.contentDocument.body.offsetHeight) //ns6 syntax
+currentfr.height = currentfr.contentDocument.body.offsetHeight+FFextraHeight;
+else if (currentfr.Document && currentfr.Document.body.scrollHeight) //ie5+ syntax
+currentfr.height = currentfr.Document.body.scrollHeight;
+if (currentfr.addEventListener)
+currentfr.addEventListener("load", readjustIframe, false)
+else if (currentfr.attachEvent){
+currentfr.detachEvent("onload", readjustIframe) // Bug fix line
+currentfr.attachEvent("onload", readjustIframe)
+}
+}
+}
+
+function readjustIframe(loadevt) {
+var crossevt=(window.event)? event : loadevt
+var iframeroot=(crossevt.currentTarget)? crossevt.currentTarget : crossevt.srcElement
+if (iframeroot)
+resizeIframe(iframeroot.id);
+}
+
+function loadintoIframe(iframeid, url){
+if (document.getElementById)
+document.getElementById(iframeid).src=url
+}
+
+if (window.addEventListener)
+window.addEventListener("load", resizeCaller, false)
+else if (window.attachEvent)
+window.attachEvent("onload", resizeCaller)
+else
+window.onload=resizeCaller
+
+
+
+</script>
+
+<script type="text/javascript">
+function doBlink() {
+  // Blink, Blink, Blink...
+  var blink = document.all.tags("BLINK")
+  for (var i=0; i < blink.length; i++)
+    blink[i].style.visibility = blink[i].style.visibility == "" ? "hidden" : ""
+}
+
+function startBlink() {
+
+  if (document.all)
+    setInterval("doBlink()",500)
+}
+window.onload = startBlink;
+
+</script>
+
+<style>
+@-webkit-keyframes blink {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
+blink {
+  -webkit-animation-name: blink;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transition: all 1s cubic-bezier(.10, .10, .25, .90);
+-moz-transition: all 1s cubic-bezier(.10, .10, .25, .90);
+  -webkit-animation-duration: 1s;
+}
+
+
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+
+<META NAME="description" CONTENT="ScoreDoom attempts to make playing & re-playing Doom wads more fun in both single-player and multi-player co-op, without changing the standard Doom gameplay and feel.
+
+
+
+ScoreDoom adds an arcade style scoring system to Doom, similar to Halo3's campaign meta-game. Points are scored when shooting/killing monsters, achieving map objectives, finding secrets & map items in the quickest time possible (as well as scoring points in other ways). In single-player, each wad/wad-episode and level will have its own hi-score which can be set. In co-op, each player competes to score the most points on a map, or across a whole wad, where the competing scores are clearly seen. A points-spread stat is also visible to tell players how far behind the leader they are."><META NAME="keywords" CONTENT="ScoreDoom, score doom, Doom, co-op,coop, id software, zdoom, gzdoom, gzscoredoom, multiplayer doom, skulltag, custom doom, custom monsters, skulltag, multiplayer">
+
+
+
+<title>Welcome to ScoreDoom/ScoreDoomST</title>
+
+<style type="text/css">
+
+<!--
+html, body, div, iframe { margin:0; padding:0; height:100%; }
+   iframe { display:block; width:100%; height:100%;border:none; }
+
+
+.style1 {font-size: 14pt;color:white;color:rgb(255, 218, 185);}
+
+.style2 {font-size: 12pt;color:white;color:rgb(255, 218, 185);}
+
+.style2b {font-size: 12pt;color:white;font-weight:bold;color:rgb(255, 218, 185);}
+
+.indent {left:10px;position:relative;}
+
+.emph {color:rgb(255, 192, 203);}
+
+table {border-width:0px;border-color:black;border-style:outset;border-bottom:0px;color:black;font-weight:bold;}
+
+td  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+th  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+
+
+A {
+
+	color: rgb(255, 218, 185);
+
+}
+
+A:link, A:visited
+
+{
+
+	text-decoration: none;
+
+	color: rgb(255, 192, 203);
+
+}
+
+
+
+A:hover, A:active
+
+{
+
+	text-decoration: underline;
+
+	//color: #bfbfff;
+
+}
+
+
+
+.parTable th {
+
+color:rgb(255, 218, 185);
+
+
+
+
+
+}
+
+
+
+.parTable td {
+
+color: rgb(255, 192, 203);
+
+
+
+
+
+}
+
+table.sample {
+	border-width: 0px;
+	border-spacing: 0px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+
+}
+table.sample th {
+	border-width: 0px;
+	padding: 0px;
+	border-style: inset;
+	border-color: gray;
+
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+table.sample td {
+	border-width: 0px;
+	padding: 0px;
+	border-style: inset;
+	border-color: gray;
+
+	-moz-border-radius: 0px 0px 0px 0px;
+}
+
+-->
+
+</style>
+
+</head>
+
+
+
+<body background="TALLYHO!readme_files/stars.gif" style="height:100%;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:75%;background-color:black;color:rgb(211, 211, 211);">
+
+<table class="sample"><tr><td valign=top style="padding-top:20px;height: 90px; width: 476px; background-image: url('images/mars2c.gif');background-repeat:no-repeat;">
+<table class="sample"><tr><td rowspan=2 style="padding-left:20px;">
+<img border=0 src="images/PLAYA1.gif"/>
+</td><td>
+<a style="font-weight:bold;color:#9C9CDE;" href="http://www.scoredoom.com/upload.php" target="sdwin" href="#" id="hscontrols">Update Hi Score Server Profile</a>
+<img height="5" width="415" style="visibility:hidden;" src="images/scoredoomtrans.gif">
+<a style="font-weight:bold;color:#9C9CDE;" href="bhapo.html" target="sdwin" href="#" id="hscontrols">Other Stuff</a>
+<img height="5" width="415" style="visibility:hidden;" src="images/scoredoomtrans.gif">
+<a style="font-weight:bold;color:#9C9CDE;" href="http://www.jobbidding.com" target="sdwin" href="#" id="hscontrols">JobBidding!</a>
+</td></tr></table>
+
+
+
+
+</td><td valign=TOP style="padding-top:10px;">
+<p class="style1" style="text-align:center;font-size:0pt;color:rgb(255, 218, 185);"><a href="intro.html" target="sdcontent"><img border=0 src="images/scoredoom.gif" />
+</a><br><img src="images/whosonline.gif">
+<p style="font-weight:bold;color:#93DB70;">
+**<i class="blink">ScoreDoom DayZ Server up and running.
+</i>**
+
+</p>
+</p>
+
+
+</td></tr></table>
+
+<a NAME="top">&nbsp;</a>
+
+
+
+<center style="height:8500px;">
+<table style="background-color:black;width:100%">
+<tr>
+<td colspan=19 style="width:100%;background-image:url('images/border3.gif');background-repeat:repeat-x;"></td>
+</tr>
+
+<tr>
+<td ALIGN="CENTER"><img src="images/lbrack.gif" border=1></td>
+<td ALIGN="CENTER"><a href="intro.html" target="sdcontent"><img src="images/sdintro.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER" style="padding-top:2px;"><a href="/blog/" target="sdcontent"><img src="images/sdnews.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="gameplay-concept.html" target="sdcontent"><img src="images/gameplay-concept.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="media.html" target="sdcontent"><img src="images/media.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="dayz.html" target="sdcontent" style="color:royalblue;font-size: 11pt;">ScoreDoom DayZ Server and Hi Score Tables</a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="hiscoretables.php" target="sdcontent"><img src="images/hiscores.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="faq.html" target="sdcontent"><img src="images/FAQ.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+
+<td ALIGN="CENTER"><a href="http://www.scoredoom.com/forum" target="sdwin"><img src="images/forums.gif" border=0></a></td><td><img src="images/border2.gif" border=1></td>
+<td ALIGN="CENTER"><a href="download.html" target="sdcontent"><img src="images/download.gif" border=0></a></td>
+
+<td><img src="images/rbrack.gif" border=1></td>
+
+
+</tr>
+<tr>
+<td colspan=19 style="width:100%;background-image:url('images/border3.gif');background-repeat:repeat-x;"></td>
+</tr>
+
+</table>
+
+
+
+<iframe frameborder=0 id="sdcontent" src="intro.html" width="100%" height="100%" name="sdcontent"/>
+
+<!--
+<B>Check out videos and download the (hopefully) final ScoreDoomST Beta: <a href="scoredoomSTBeta-README.html" target="_blank">here</a><br>
+Beta 5 fixes a major bug that caused frequent server crashes, as well as a ton of more enhancements. More info in the link above.
+</B>
+
+<TABLE style="background: #000000;width:100%"> <TR>
+<TD valign=TOP>
+
+<div style="text-align:left;margin-left:20%;">
+<p class="style1">Table of Contents</p>
+
+
+&nbsp;<a href="#A">&nbsp;*Quickstart Guide*</a><br><br>
+&nbsp;<a href="#1">1. &nbsp;What is ScoreDoom?</a><br>
+
+
+
+&nbsp;<a href="#2">2.  &nbsp;Installation</a><br>
+
+&nbsp;<a href="#3">3.  &nbsp;Known Problems</a><br>
+
+&nbsp;<a href="#5">4.  &nbsp;Gameplay Details</a> <br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#50">4.1 New Alt-Fire Modes</a><br>
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#51">4.2 Scoring</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#53">4.3 ScoreDoom Par Time and Par Bonuses in Detail</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#54">4.4 Hi Score System</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#55">4.5 Hubs</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#56">4.6 Boss Rush (Add-On Pack Only)</a><br>
+
+
+&nbsp;<a href="#4">5.  &nbsp;Online Hi Scoring Details</a>	<br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#41">5.1 Hi Score Servers</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#42">5.2 Anti-Cheating</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  <a href="#421">5.2.1 Resolving Hash Code Problems</a><br>
+
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#43">5.3 Hardcore Mode vs Regular Mode</a><br>
+
+&nbsp; &nbsp;&nbsp; &nbsp; <a href="#44">5.4 No Infighting Mode</a><br>
+
+&nbsp;<a href="#6">6.  &nbsp;ScoreDoom HUD Details</a> <br>
+
+&nbsp;<a href="#7">7.  &nbsp;ScoreDoom Configuration Details</a><br>
+	&nbsp; &nbsp;&nbsp; &nbsp; <a href="#71">7.1 Configuring Add-On Pack Content</a><br>
+
+
+&nbsp;<a href="#112">8.  &nbsp;Add-On Pack Details</a><br>
+
+
+&nbsp;<a href="#112">9.  &nbsp;Co-op sv_cheats support</a><br>
+
+&nbsp;<a href="#9">10.  &nbsp;Multiplayer HowTo</a><br>
+
+<a href="#10">11.  &nbsp;Strategies For Better Scores</a><br>
+
+<a href="#111">12. Credits</a>
+
+</div>
+</center>
+
+</TD>
+
+
+<TD>
+
+<p>
+
+
+
+<span style="color:#FFDAB9;font-style:italic;">Current Version: </span><br>
+<span style="color:#FFDAB9;font-style:italic;">(online hi scoring supported)</span><br>
+
+<a href="http://www.filefront.com/15771363/gzscoredoom-2.8v2r3c.rar" target="_blank" style="font-size: 14px;font-weight: bold;">ScoreDoom 2.8v2r3c</a>
+
+<br>
+
+
+
+<a href="http://www.filefront.com/15759497/gzscoredoom2.8v2r3ADDONPACK.rar" target="_blank" style="font-size: 14px;font-weight: bold;">ScoreDoom 2.8v2r3c Add-On Pack</a><br>
+<a href="http://www.filefront.com/15771353/ScoreDoomv2.8v2r3csrc.rar" target="_blank" style="font-size: 14px;font-weight: bold;">v2.8v2r3c Source Code</a><br>
+
+<a href="#"  style="font-size: 14px;font-weight: bold;text-decoration: line-through">ScoreDoom 2.8 Hi Score Server Files</a><br><span style="font-size:10pt;color:#999999;">(For running your own hi score server... Coming Soon)</span>
+<br><br>
+
+
+
+<span style="color:#FFDAB9;">Online Hi Score Pages: </span><br>
+<p class="indent">
+<a href="http://www.scoredoom.com/player.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Change Your Password</a><br>
+<a href="http://www.scoredoom.com/upload.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Update Your Profile</a><br><br>
+
+<span style="color:#FFDAB9;font-style:italic;">Regular Mode Hi Score Tables: </span><br>
+<a href="http://www.scoredoom.com/wad_main.php?&addonpack=0" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/wad_main.php?&addonpack=1" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Add-On Pack Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/wad_main_level_latest2.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">View The Latest Level Hi Scores Set</a><br><br>
+
+<span style="color:#FFDAB9;font-style:italic;"><span style="color:red;">Hardcore</span> Mode Hi Score Tables: </span><br>
+<a href="http://www.scoredoom.com/hardcore/wad_main.php?&addonpack=0" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/hardcore/wad_main.php?&addonpack=1" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Add-On Pack Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/hardcore/wad_main_level_latest2.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">View The Latest Level Hi Scores Set</a><br><br>
+
+<span style="color:#FFDAB9;font-style:italic;"><span style="color:white;">Non-Infighting</span> Mode Hi Score Tables: </span><br>
+<a href="http://www.scoredoom.com/ni/wad_main.php?&addonpack=0" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/ni/wad_main.php?&addonpack=1" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Add-On Pack Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/ni/wad_main_level_latest2.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">View The Latest Level Hi Scores Set</a><br><br>
+
+<span style="color:#FFDAB9;font-style:italic;"><span style="color:white;">Non-Infighting</span> &amp; <span style="color:red;">Hardcore</span> Mode Hi Score Tables: </span><br>
+<a href="http://www.scoredoom.com/ni/hardcore/wad_main.php?&addonpack=0" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/ni/hardcore/wad_main.php?&addonpack=1" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">Add-On Pack Hi Scores</a><br>
+
+<a href="http://www.scoredoom.com/ni/hardcore/wad_main_level_latest2.php" target="_blank" style="font-size: 14px;font-weight: bold;color: #AA0000;">View The Latest Level Hi Scores Set</a><br><br>
+
+
+</p>
+
+<div style="color:#FFDAB9;">Hi Score bragging rights, CO-OP game <br>coordination, and other talk in the:<br>
+
+<a href="http://www.scoredoom.com/phpBB2" target="_blank" style="font-size: 14px;font-weight: bold;">Forums</a>
+</div>
+
+<br>
+<div style="color:#FFDAB9;">Add-on pack Boss Guide (thanks to dljosef):<br>
+
+<a href="http://www.scoredoom.com/SDBosses.html" target="_blank" style="font-size: 14px;font-weight: bold;">Bosses Guide</a>
+</div>
+<br>
+
+</p>
+<br><br>
+
+
+
+
+
+<p>
+
+<span style="color:#FFDAB9;font-style:italic;">Other Stuff (unrelated to ScoreDoom): </span><br>
+<a href="bhapo.html" target="_blank" style="font-size: 14px;font-weight: bold;color: #007FFF;">BilboHicks' Gaming Apothecary</a><br>
+
+
+</p>
+
+
+</TD>
+
+</TR>
+</TABLE>
+
+</center>
+<br><br>
+<center>
+<p class="style1">ScoreDoom Preview<br><span style="color:#FFDAB9;font-style:italic;font-weight:bold;font-size:9pt;">(thanks to BlackCecil05)</span></p>
+
+
+<object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/AClu5raE8gQ&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/AClu5raE8gQ&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object>
+
+</center>
+
+<br><br>
+
+
+<a NAME="A"><p class="style1">*Quickstart Guide*</p></a>
+Install into a separate directory.<br>
+Grab the (optional) ScoreDoom add-on-pack (SD-ADDONPACK.WAD) to play with a ton of extra powerups & enemies<br>
+Setup options (video/controls etc...) <br>
+Choose a Player name in Player Options<br>
+Choose a Player password in ScoreDoom Options (choose a separate password from your usual)<br>
+Choose Online Scoring Mode: <p class="indent"><ul><li>'Off' for local hi scores (you set your own hi scores)</li>
+<li>'Regular' for competing against others on a hi score server in regular mode (saves allowed any time).</li>
+<li>'Hardcore' for competing against others on a hi score server in hardcore mode (only beginning of level auto-saves allowed). </li>
+</ul>
+</p>
+
+Score as many points as you can, in single player, or against others in co-op.<br>
+For online high scoring (regular or hardcore), browse to scoredoom.com to view hi score server tables, change your server password and add a profile to the server for others to view.<br>
+<br>
+<br>See also <a href="#5"> &nbsp;Gameplay Details</a>
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<a href="#top">Back to top</a>
+
+
+<a NAME="1"><p class="style1">1. What is ScoreDoom?</p></a>
+
+ScoreDoom attempts to make playing & re-playing Doom wads more fun in both single-player and multi-player co-op, without changing the standard Doom gameplay and feel. <br><br>ScoreDoom adds an arcade style scoring system to Doom, similar to  Halo3's campaign <a href="http://en.wikipedia.org/wiki/Halo_3#Campaign" target="_blank">meta-game</a>. Points are scored when
+
+shooting/killing monsters, achieving map objectives, finding secrets & map items in the quickest time possible (as well as scoring points in other ways). In single-player, each wad/wad-episode and level will have its own hi-score which can be set.<br><br>Single player has 3 modes, offline hi scoring, regular online hi scoring and hardcore online hi scoring. Offline hi scores are stored locally, online hi scores are stored on a hi score server for all to see. Online hi scoring sends and retrieves hi scores from a central server. Scoredoom has an official server url which players may use, or they may run their own hi score servers, configured to how they like. Regular online hi scoring allows player save games throughout a level, Hardcore only allows players to use the beginning of level auto-save. Hardcore mode and Regular mode hi scores have separate tables on the hi score server. (*Note: version 2.2b only supports Regular mode online hi scoring*)<br><br>In co-op, each player competes to score the most points on a map, or across a whole wad, where the competing scores are clearly seen. A  points-spread stat is also visible to tell players how far behind the leader they are.<br><br> The ScoreDoom Add-on Pack augments the regular Doom monsters and powerups with well over 250 new monsters, and over 15 new powerups, thanks to it's inheritance from the <a href="http://www.zdoom.org" target="_blank">zdoom</a> & <a href="http://grafzahl.drdteam.org/" target="_blank">gzdoom</a> engines, and the <a href="http://www.realm667.com/index.php?option=com_content&task=blogcategory&id=38&Itemid=105&limit=21&limitstart=0" target="_blank">talented artists and modders</a> in the Doom mod community. Special attention was made to keep the new content as close as possible to the original Doom feel. Furthermore
+the new monsters and artifacts can be tailored to just how you like it. See <a href="#71">7.1 Configuring Add-On Pack Content</a>
+
+<BR><BR>Other than that, ScoreDoom looks and plays just like Doom (or ZDoom/GZDoom). There are also some additional aesthetics, like the BloodBath announcer voice which can be turned off or on.
+
+<br>Scoredoom also supports hexen-based Zdoom Hub wads. See the <a href="#55">Hub</a> section below to see how ScoreDoom deals with Hubs.
+
+
+
+
+
+<a href="#top">Back to top</a>
+
+<br>
+
+
+
+<a NAME="2"><p class="style1">2. Installation</p></a>
+
+Compiled to run on Win32 x86. New executable (gzscoredoom.exe). <br/>
+
+Recommended to install the archive contents into it's own directory.<br>
+
+You will need an official IWAD somewhere on your system to play.<br/>
+
+Recommended: In OpenGL Options, set Precache GL Textures to 'on', this will help the performance. (i.e.,to get rid of the ocassional game stuttering)<br/>
+
+It is also recommended to keep Zdoom's autosave feature turned on. This will create a save game at the beginning of each level in single player.<br><br>
+
+
+
+
+
+<a NAME="3"><p class="style1">3. Known Problems</p></a>
+
+* Under Display Options->Open GL Options, Particle System should never be set to Square (this is a bug in GZDoom 1.0.29)<br><br>
+
+* When online hi scoring mode is on, scoredoom attempts to connect to the hi score server when a level loads, and after it unloads
+
+If there is a bad connection or latency, this can cause the game to not respond/freeze for a few seconds. I need to improve the networking code here.<br><br>
+* Not really a problem, but it takes some getting used to. In the ScoreDoom Setup options screen, whenever the 'Online Hi Scoring' mode is changed, you will need to restart gzscoredoom to play online again. This is to stop potential cheating. I may refine this in the future, so that the player doesnt have to reboot gzscoredoom.
+<br><br>
+* Relatedly, You will need to restart scoredoom after its first run after the first installation in order
+to use online hi-scoring.
+<br><br>
+
+
+* ScoreDoom lacks proper Client/Server networking like Skulltag has. Unfortunately the Zdoom/GZDoom based Skulltag does not release it's sourcecode, so I built from GZDoom instead, which uses regular Zdoom networking. This is completely fine for LAN/WAN and even fast internet connection games, but don't expect great performance for slower/high-latency connections or a fancy GUI for networking. Unfortunately you will need to use command line options to host/join a game and know the host's IP address. Though I have made this process very easy to understand in the <a href="#9">Multiplayer HowTo</a> section. <br><br>
+
+* Resolutions lower than 640x480 are not supported by this version's HUD. <br><br>
+* Gzdoom's Custom HUD is not supported. <br><br>
+
+* ScoreDoom is meant to work with 'vanilla' Doom/Doom2/Boom wads. Newer Zdoom specific wads, typically with heavily modded weapons and custom monsters may cause problems.
+
+Firstly some custom weapons built within zdoom's framework, utilizing <a href="http://zdoom.org/wiki/DECORATE" target="_blank">DECORATE</a> may not register a hit or score, due to the source of the damage being untraceable. This may be fixed in a future release.
+
+Furthermore some newer zdoom wads/mods which use fancy ACS may cause problems with tracking hi scores. Efforts may be made in future releases to make these wads more compatible with ScoreDoom.<br><br>
+
+* When altering Add-On Pack configuration properties from the default for the Add-On Pack (See <a href="#71">7.1 Configuring Add-On Pack Content</a>), demos may get out of synch and Online Hi-scoring will be disabled.
+<br><br>
+
+* When playing multiplayer co-op, all players need to have the same Add-On Pack configuration values
+(See <a href="#71">7.1 Configuring Add-On Pack Content</a>) <br><br>
+
+* The SD-ADDONPACK wad, which contains the custom monsters, can cause conflicts with certain zdoom wads like Demon Eclipse. So these wads should be played by themselves. I may release an update to SD-ADDONPACK wad which will fix this (mainly just renaming a ton of different stuff), but I dont see any point until the issue above is fixed. <br/><br>
+
+ Doom Legacy wads (compatible with gzdoom) *should* be ok. <br/>
+
+
+
+<br>
+
+<a NAME="5"><p class="style1">4. Gameplay Details</p></a>
+
+SIMPLE: To score the most points, try to find as many secrets and map items as possible, kill as many monsters as possible, complete as many map objectives as possible, and explode as many barrels as possible, as quickly as possible. The player with the highest 'Wad/Epi Score' wins the game. Other than that, it is Doom.<br/><br/>
+
+
+
+
+
+<p class="indent">
+
+
+<a NAME="50"><b>4.1 Chaingun, Rocket Launcher, Plasma Rifle & BFG Alt-Fire</b></a><br/><br/>
+Scoredoom adds 4 new firemodes to some of the standard weaponary of Doom. The chaingun, rocket launcher, plasma rifle & BFG now both have
+secondary modes of fire, which can help create higher scores. Altfire is maintained by the right mouse-button by
+default.<br>The Chaingun alt-fire doubles the fire-rate, but doubles the inaccuracy.
+<br>The Rocket Launcher alt-fire lobs rockets like a grenade launcher, good for reaching around corners.
+<br>The Plasma Rifle alt-fire is a
+railgun shot which can penetrate multiple enemies at 100 damage each. Each shot consumes 5 cells.
+<br>The BFG alt-fire is a devestating nuclear warhead missile. Each shot consumes 400 cells.
+
+
+<br/><br/>
+
+<a NAME="51"><b>4.2 Scoring</b></a><br/><br/>
+
+
+
+	(i)  <span class="emph">Damage</span>: Players get points for the amount of damage they inflict on monsters.<br/><br/>
+
+	(ii) <span class="emph">Kills</span>: Players also get bonus points for making a kill which is 10% of the total health of the monster. The Boss Brain gives +5000 points on death.<br/><br/>
+
+	(iii) <span class="emph">Extreme Death Kill Bonuses</span>: On top of the Kill points, players also get bonus points for making an 'extreme death' kill which takes the monsters health down to more than negative it's initial health. This bonus gives 10% of the total health of the monster. Extreme deaths are when certain monsters explode into gibs. This rewards players creating more carnage with powerful weapons.(*NOTE: Extreme death bonuses do not apply to monsters with health less than 20HP, i.e. imp trite*)<br/><br/>
+
+	(iv) <span class="emph">Secrets</span>: Finding a secret gives +250 points.<br/><br/>
+
+	(v) <span class="emph">Map Objectives</span>: In multiplayer, bonus points are given for players who reach certain objectives in the level first. These include: getting to a keycard or skullkey first (+250 points), opening a door with a keycard or skullkey first (+250 points), reaching the level exit first (+250 points), reaching a secret level exit first (+500 points). In SP, bonus points are still given for reaching these objectives, since in some wad levels: keys, colored doors and secret level exits can be optional depending on secrets found etc... Additional support has also been given for 'any key' (+250), 'All 3 keys' (+750), and 'All 6 Keys' (+1500) doors.<br/><br/>
+
+	(vi) <span class="emph">Map Items</span>: Collecting a map item gives +5 points. Any item counted as a map item in Doom, is one that <b>can always be picked up</b>, and goes towards the Item Count percentages at intermission screens. Items like blue health flasks, armor helmet bonuses, radiation suits, artifact powerups, automap pickups, beserk packs, infrared goggles etc... Not armor suits, health pickups, ammo or weapons.<br><br>
+
+	(vii) <span class="emph">Par Bonus</span>: The bonus/penalty to be added depending on how well the player beat the map's ScoreDoom par time. Its based on a percentage of the total points scored so far for the level.<br/><br/>
+
+	(viii) <span class="emph">Chain Bonuses</span>: If a player can kill 4 monsters in a very short time, they will get a small bonus of +5 points or more (depending on the monster's starting health), which accumulates up to a +5 or more point bonus, for every other monster killed after that, just as quickly. If the player can keep the rampage going, they will eventually get a full Chain Bonus of +5 or more points per monster. (NOTE: Any extreme death bonus will also be added to the chain bonus score for the killed monster, which essentially doubles the extreme death bonus during chain bonuses. This rewards players creating more carnage with powerful weapons.)(*NOTE2: Chain bonuses do not apply to monsters with health less than 20HP, i.e. imp trite*)<br/><br/>
+
+	(ix) <span class="emph">Co-op Death</span>: There is a -1000pt penalty for death in co-op games which come from monsters, environmental hazards or suicide. Death from other players has no penality. Points can never be less than 0. This was added in mind to stop players taking advantage of deliberate suicides, as well as a general penalty. This score does not get applied in SP, since the level is reset on death.<br/><br/>
+
+	(x) <span class="emph">Monster Infighting Deaths and Monster Suicides</span>: Since monster deaths due to infighting and suicides are ultimately player assisted, there is a small bonus for these deaths too. In SP, it is equal to the kill bonus of the monster (10% of the original health). In Co-op, the current level points leader (*not the total wad score leader on the HUD!*) scores a bonus equal to the creature's kill bonus, whereas every other player scores a fraction of this depending on the ratio of their score for the level to the level points leader score. No player can get less than 1pt, and only the current level points leader will (should!) get the full bonus. The rationale behind this was that the level points leader probably deserves the bigger bonuses, and it also forces the other players to attack more to get in front.<br/><br/>
+
+	(xi) <span class="emph">Barrels</span>: Barrels give +5 points when destroyed.<br/><br/>
+
+	(xii) <span class="emph">100% Complete Bonuses</span>: At the end of a level, 100 extra bonus points are awarded when: 100% of all monsters are slain, 100% of all items are found, 100% of all secrets are found, 100% of all barrels are exploded: For a potential total of 400 bonus points. Levels with no barrels etc... dont give these bonus points.<br>
+	Note: Playing with the add-on pack, some levels are simply impossible to complete with 100% kills due to a couple of the monster replacements not being mobile, and thus cannot warp into the main map.<br/><br/>
+
+	(xiii) <span class="emph">Summoned/Resurrected Monsters</span>: Monsters such as Lost Souls which are spawned by Pain Elementals etc..., and monsters resurrected by Archviles etc.., do NOT score points. This also applies to monsters spawned in from cubes emitted by The Icon of Sin. Lost Souls etc..., by themselves, (i.e. not summoned from Pain Elementals. etc...) DO score.<br/><br/>
+
+
+	(xiv) <span class="emph">Artifacts</span>: Clever use of ScoreDoom artifacts can help contribute to very large scores.
+
+
+
+
+<br/><br>
+
+	Each player has a 'Wad/Epi Score' for the whole wad(s) being played and 'Level Score' for each map being played.
+
+<br/><br/>
+
+
+
+<a NAME="53"><b>4.3 ScoreDoom Par Time & Par Bonus in Detail</b></a>
+
+<br/><br/>
+
+
+
+	ScoreDoom uses a fairly simple formula based on the amount of monsters, secrets & items in a level to dynamically determine a
+
+	reasonable par time for the players to complete a level AND kill all the monsters. For the official Doom & Doom 2 levels, it works out to be very roughly at least
+
+	around 3x the standard par times, sometimes a lot higher. Higher skill levels (more monsters) will give higher par times. For lower skill levels
+
+	the par time should never be less than the standard default par time.<br/><br/>
+
+	Additionally, from version 2.2b onwards, ScoreDoom will count the amount of sectors in a map, and if the par time is too low for the sector count, it will compensate. This gives more realistic par times for wads like TeamTNT's Return from oblivion which relies on monsters being spawned after the map is loaded, and thus not taken account of in the regular par time calculations.
+	<br><br>
+
+
+
+	The Par Bonus is a little more complicated, but it is also calculated using a fairly simple formula based on the elapsed time for the level, the
+
+	ScoreDoom par time and the player's points for the level. The Par Bonus will be seen to go down and this may be confusing,
+
+	but the Par Bonus is actually the points which would be added should the player complete the level RIGHT NOW. It is set up
+
+	so that players will lose all their points for a level should they take from 10 to 20 minutes after the par time is over to complete the level. This is meant to
+
+	stop players taking advantage of arch-viles and pain elementals to rack up infinite scores, as well as making them kill/score faster within the par time.<br><br>
+
+
+
+	The formula to compute the par bonus is as follows: <b>(level par time - time taken)*(points scored)/(level par time * 5)</b><br><br>
+
+
+
+	Players will lose all their par bonus points if they fail to complete the level within the par time. When the time taken goes over the par time, a warning is issued to the players, and a new but similar formula is used, based on the
+
+	the level par time, which more quickly penalizes the players. Players may lose all their points for the level, if they fail to complete the level within 10->20 minutes after the par time is over. (See below for more details).<br><br>
+
+
+
+	A quick example may also be instructive of how the par bonus works. Suppose a player racks up a level score of 1000 points and then completes the level at 1/4 par time, 1/2 par time, 3/4 par time and finally at full par time. Another player does the same thing but finishes with 2000 points, the following table
+
+	shows the respective scores the players will get:
+
+
+
+	<table cellspacing=2 class="parTable" style="background-color:black;color:white;text-align:center;width:700px;"><tr><th>% Of The Par Time The Level Was Completed At</th><th>Level Score</th><th>Par Bonus</th><th>Total Points</th></tr>
+
+	<tr><td>25%</td><td>1000</td><td>+150</td><td>1150</td></tr>
+
+	<tr><td>25%</td><td>2000</td><td>+300</td><td>2300</td></tr>
+
+	<tr><td>50%</td><td>1000</td><td>+75</td><td>1075</td></tr>
+
+	<tr><td>50%</td><td>2000</td><td>+150</td><td>2150</td></tr>
+
+	<tr><td>75%</td><td>1000</td><td>+25</td><td>1025</td></tr>
+
+	<tr><td>75%</td><td>2000</td><td>+50</td><td>2050</td></tr>
+
+	<tr><td>100%</td><td>1000</td><td>+0</td><td>1000</td></tr>
+
+	<tr><td>100%</td><td>2000</td><td>+0</td><td>2000</td></tr>
+
+	</table>
+
+</p>
+
+
+
+
+
+	<p class="indent">
+
+	Players with higher scores thus have more to lose, the longer it takes to complete the level.<br><br>
+
+
+
+	Maps with ScoreDoom par times up to 5 minutes, will allow the players 10 minutes to complete the level with a score more than 0 points after the SD partime is over.
+
+	Maps with par times between 10 and 20 minutes will give the players an extra amount equal to the par time to complete the level. Maps with par times
+
+	over 20 minutes will only give the players an extra 20 minutes to complete the map, over the SD par time of the level. So when the players go over the SD par time, the par bonus can become a
+
+	serious par penalty.
+
+
+
+	<br/><br/>
+
+	<a href="#top">Back to top</a>
+
+	<br/><br/>
+
+	<a NAME="54"><b>4.4 Hi Score System</b></a>
+
+	<br/><br/>
+
+		Offline Hi Scores are saved in the zdoom-yourusername.ini file, under [HiScores] so make sure you back up that file or section.
+
+		<br/><br/>
+
+		Hi Scores in general are only saved after a level is completed (i.e. during intermission screens & finale screens).
+
+	<br/><br/>
+
+		Hi Scores are determined based on the current wad configuration loaded. So if you play with say '-file icarus.wad' then
+
+		again with say '-file icarus.wad -icar28a.wad' or with other wads loaded, they will all have their own hi scores. So it is
+
+		important to be consistent with what wads are loaded and also the wad order (when using a bunch of single level wads together say).
+
+	<br/><br/>
+
+		Hi Scores do not apply to multiplayer, so scores will not be saved in co-op.
+
+	<br/><br/>
+
+		Hi Scores in Nightmare Mode will not be saved.
+
+	<br/><br/>
+
+	When using custom monsters, the distribution of monsters in SP may change with updates to ScoreDoom, which can affect Hi Scores.
+
+	<br/><br/>
+
+		<b><i>A note on Level Hi Scores VS Wad/Epi Hi Scores:</i></b> Wad/Epi Hi Scores are based on scores added up for a single session of play across one level or more within a
+
+		wad configuration. Score Doom supports saved games for this also. Level Hi Scores are also recorded per level. It is possible to play a single level and beat it's hi score
+
+		without changing the Wad/Epi Hi Score, thus the sum of the Level Hi Scores can be greater than the Wad/Epi Hi Score, for a wad configuration in the [HiScores] section. Level Hi Scores are probably better attempted during a session of play (this includes saved games) across several
+
+		levels or full megawads, since players likely start off with extra weapons at the start of levels.
+
+	<br/><br/>
+
+
+
+
+
+		<a NAME="55"><b>4.5 Hubs</b></a><br><br>
+
+		Zdoom wads like Hell Factory utilize a hub based world design, whereby levels can be exited and re-entered within the hub. Scoredoom calculates a par time for
+
+		 each level within a hub and keeps track of the time spent within the level regardless of how many times a level is re-entered, which can effect the total score for
+
+		 the wad being played. The intermission or finale screen after completing a hub will only display the total (wad) points so far for the wad/game, since a level score makes no
+
+		 sense at the end of a hub. These screens will also display the accumulated ScoreDoom par time for each level encountered within the hub (the ScoreDoom hub par time).
+
+		  Each level though will have its own score and even high score displayed as you play through the game/wad.
+
+	<br/><br/>
+
+	<a NAME="56"><b>4.6 Boss Rush (Add-On Pack Only)</b></a><br><br>
+	When playing with the Add-On Pack, the final levels of Ultimate Doom (E1M8, E2M8, E3M8, E4M8) will require that a series of Bosses be vanquished before the episode can be completed.
+	Rather than the single boss(es) without the add-on pack.
+
+
+	<br/><br/>
+
+</p>
+
+
+
+<a href="#top">Back to top</a>
+<br><br>
+
+
+<a NAME="4"><p class="style1">5. Online Hi Scoring Details</p></a>
+If you playing  with scoredoom for the first time, it is recommend to read section <a href="#5">4. Gameplay Details</a> first.<br><br>
+Hi Scores are only kept in single player games. In co-op, players compete to be the highest overall points scorer for the duration of play. Offline hi scores are stored locally in the zdoom-<yourusername>.ini file, and in offline you are basically competing against yourself, or against someone else using your computer.<br>
+
+With Online Hi Scoring, scoredoom will retrieve the current hi score for the wad and wad-level you are playing,
+
+along with the name of the player who set it. If you beat either the level or wad score, your score(s) and name
+
+ will be uploaded to the server for all to see on the server's high score table, as well as in-game.
+
+
+
+
+
+<p class="indent">
+
+<a NAME="41"><p class="style2b">5.1 Online Hi Score Servers</p></a>
+
+A hi score server will have a url which ScoreDoom can communicate with. It will also have urls to display the hi score tables and to allow players to reset their password. Hi Score Servers can allow new player-names to be added, or only allow player-names which are manually added by the admin.
+
+Players must provide a valid password, to match their player-name handle.
+
+<br><br>
+
+A server can be loaded with officially recognized iwads (+pwads) as well as allowing players to submit scores for their own wads which they are playing. Hi Score Servers can therefore have 2 hi score tables. One with the officially configured wads, and another with wad configurations auto-added by players. Hi Score servers can be configured to not allow players to auto-create new wad scores also. <br><br>
+
+The official scoredoom server allows both and the hi score tables are at <a href="http://www.scoredoom.com/wad_main.php">http://www.scoredoom.com/wad_main.php</a> and the player password reset page is at <a href="http://www.scoredoom.com/player.php">http://www.scoredoom.com/player.php</a>
+
+<br><br>
+
+
+<a href="#top">Back to top</a>
+<br><br>
+
+<a NAME="42"><p class="style2b">5.2 Anti-Cheating</p></a>
+
+Since zdoom based engines are extremely versatile and configurable, ScoreDoom endeavours to stop any way in which a hi score may be posted unfairly in online mode. If you are getting purple *Online Hi Scoring Disabled* messages on the HUD, its worthwhile to read the text below. Also see section 4.2.1. below.
+
+<br><br>
+
+When Online Hi Scoring is dissallowed, offline hi scoring will be used. To  phrase an earlier document:
+
+
+
+<p class="indent">
+
+<pre>
+
+Scoredoom 2.0 is very stringent in checking for any potential actions which could lead
+
+ to unfairly posting a new hi score (like using the console). If Scoredoom detects an illegal
+
+ action it will notify you with a siren noise and automatically revert to local hi scoring.
+
+ You will need to restart Scoredoom, even to play with a previous OK saved game.
+
+ If you dont see any green player names in the bottom R.H.S. of the HUD, it means online hi
+
+ scoring has been disabled. You can check the console to see why.
+
+
+
+ 	i.Startup
+
+ 	---------
+
+ 	cfg file and autoexec files are not allowed.
+
+ 	'+' commands in the command line are not allowed (with a few exceptions like +compatflags & +gennodes).
+
+ 	patch files must be loaded with -deh (i.e. -deh x.deh b.bex etc...)
+
+ 	pk3 files, zip files and raw lumps are allowed, but they will give a different MD5 value used
+
+ 	by the hi score server (see section iv below).
+
+
+
+
+
+ 	ii.During Gameplay
+
+ 	------------------
+
+ 	Once the game has been started you may use the menu options (setting compatibility options etc...),
+
+ 	but soon as a level is started, you should only being using the main menu, to load saved games,
+
+ 	start a new one, exit and to save a game.
+
+
+
+	iii. Hiscore Server Problems
+
+	----------------------------
+
+	Online scoring will be disabled if you have problems logging onto the hi score server, or if the
+
+	server gives back an error.
+
+
+
+
+
+	iv. MD5 file checking
+
+	---------------------
+
+	The executable does an MD5 checksum of itself (gzscoredoom.exe) and of the gzscoredoom.pk3, as well
+
+	as any wads and patches applied. The hash generated by the iwads, pwads and patches is used as a
+
+	key on the hi score server. It is important that the files are not tampered with, and the wads not
+	contained in any archive files (zips, pk3s) and that the wad order is maintained.
+
+
+
+
+
+	v. Saved Games
+
+	--------------
+
+	When online hi scoring is enabled, any loaded save games will be checked to see if they were saved ok
+
+	(w.o. 'any cheating'),
+
+	else the save game will cause scoredoom to flag for cheating.
+
+
+
+	vi. dmflags & dmflags2
+
+	----------------------
+
+	Scoredoom enforces dmflags & dmflags to be 0 for all levels played, unless it finds a MAPINFO lump.
+
+	MAPINFO can set dmflags for the level to allow/disallow jumping,running & freelook. Scoredoom will
+
+	then enforce these flags only for the level.
+
+
+
+
+
+	vii. Other Stuff
+
+	----------------
+
+	Dont set sp_random_custom_monsters=true in the ini file.
+
+	For the Add-On Pack version you are using, you must use the default configuration values for it.
+	There is a default-config.txt file that comes with each Add-On Pack version which contains the
+	values expected for online hi-scoring with that Add-On Pack. Simply copy from this file and
+	overwrite the the values in your ini file.
+
+
+</pre>
+<br>
+<a href="#top">Back to top</a>
+
+<p class="indent">
+
+<a NAME="421"><p class="style2b">5.2.1 Resolving Hash Code Problems</p></a>
+
+The use of hash codes for security is invaluable, but can also be a potential nightmare!<br><br>
+
+The server typically checks to make sure that your copy of gzscoredoom.exe and gzscoredoom.pk3 is ok. So no
+
+editing of these files is allowed for online hi scoring. Its possible, as each new version of scoredoom is released, that the server
+
+has an outdated hash code, which means it needs to be updated before your scoredoom client can communicate with it.<br><br>
+
+The other server check is that the md5 hash of all the wads and patches you are using matches up with what the server expects. Possible incongruities which can arise are due to: (i) the player using a different version of the iwad than what the server expects, (ii) a different version of a pwad or patch than what the server expects,
+
+(iii) the order in which the pwads and patches are applied do not match up to what the server expects.<br><br>
+
+Its best to first look at the 'Extra PWADS & Patches' field on the hi score table to make sure the order of your files is ok. If it is, then you need to contact the hi score server admin to find out what version of the iwads and pwads they are using. The official scoredoom server uses the latest versions for all the iwads: <a href="http://doom.wikia.com/wiki/Doom_files">http://doom.wikia.com/wiki/Doom_files</a><br><br>
+
+New since Scoredoom 2.6, when playing with an Add-on Pack, 2 other hash codes are sent to the hi score server. It is the hash-code of the Add-On Pack being used, and a hash-code of the Add-On Pack configuration settings (See <a href="#71">7.1 Configuring Add-On Pack Content</a>) in your ini.
+For the Add-On Pack version you are using, you must use the default configuration values for it.
+	There is a default-config.txt file that comes with each Add-On Pack version which contains the
+	values expected for online hi-scoring with that Add-On Pack. Simply copy from this file and
+	overwrite the the values in your ini file.
+	<br><br>
+
+
+
+To help resolve whats going on, you can run gzscoredoom with a -debugfile command line param, and start a level. Then search in the debug.txt file which is created for the term 'Wad Hash Code Generated from Wads & Patches'.
+
+You will see a 32 character hashcode which is also generated. This is a hash generated from both the iwad being played and any extra pwads & patches. Then go to the server's hi score table and click on the link of the wad you are trying to play to view it's level hi scores. Looking at the value of 'wadhash' in the URL, make sure it
+
+matches with what you have. You can also use free 3rd party apps, like md5summer, to check an iwad/pwad file off the hard-drive. <br><br>
+
+Note: Scoredoom does an MD5 hash of the sum of the indivdual md5 hashes of every iwad, pwad & patch added. So its best to use -debgufile as opposed to md5summer. md5summer is good at making sure you have the correct pwad/iwad
+
+compared to what's on doom.wikia.com above ;-)
+
+
+
+</p>
+
+</p>
+
+
+
+</p>
+<a href="#top">Back to top</a>
+
+<p class="indent">
+
+<a NAME="43"><p class="style2b">5.3 Hardcore Mode vs Regular Mode</p></a>
+From v 2.3 onwards, in the ScoreDoom Setup options screen, 'Online Hi Scoring' mode now has 3 options,
+'off' for offline hi scoring, 'regular' for regular mode online hi scoring and 'hardcore' for hardcore mode online hi scoring. <br><br>
+Regular mode allows players to save at will throughout a level. Hardcore mode only allows the start of level auto-save which is enabled by default by ScoreDoom. So players must play throughout the level from start to finish without saving in order to set a hi score in Hardcore.<br><br>
+The (official) hi score server has a separate set of hi score tables for Regular mode and Hardcore mode. The Scoredoom client will also check whether an autosave game loaded in Hardcore mode was actually saved in Hardcore mode (as opposed to Regular mode), if not, online hi scoring will be disabled and the client will need to be restarted. To help with this, auto-save games saved in Hardcore mode will have a 'Hardcore' prefix added, which will ease the potential frustration of loading a disallowed auto-save game
+:-)<br><br>
+The zdoom engine by default supports a total of 32 hardcore auto-save game files at a time. For hardcore mode, if needed (i.e. across simultaneous wads), you can increase this up to 64 max. You can do this by going into <yourusername>-zdoom.ini and setting <b>sdhcsavecount</b> to a bigger number.
+Regular auto-saves will still be available for other modes. In hardcore mode it is recommended to play just a few different wads at a time, to stop overwriting of auto-saves.
+
+
+</p>
+<p class="indent">
+
+<a NAME="44"><p class="style2b">5.4 No Infighting Mode</p></a>
+This turns off monster infighting and damage to each other. So that its up to the player to score the points rather than have infighting
+dictate the score which is more random.<br>
+Offline hi scoring mode will separate no-infighting hi scores from regular infighting hi-scores.<br>
+
+For online hi scoring, eventually the Scoredoom Hi Score Server will support no-infighting with seperate hi-score tables in regular & hardcore mode, but as of writing,
+you need to play with regular infighting in order to post a score.<BR>
+Eventually there will be 4 separate hi score tables, 2 for hardcore & regular mode regular-infighting, and 2 for for hardcore & regular mode non-infghting.
+A game saved in non-infighting mode that gets loaded into regular infighting mode (and vice versa) will
+disable online hi-scoring, much like games loaded from regular skill mode into hardcore mode.
+
+
+</p>
+
+
+
+
+
+
+<a href="#top">Back to top</a>
+
+<br><br>
+
+
+
+<a NAME="6"><p class="style1">6. ScoreDoom HUD</p></a>
+
+	Please note, that since this was originally written, there have been additional HUD messages added.<br><br>
+
+	There are some immediately apparent changes from normal Doom. The HUD now has a series of stat readouts on the lower L.H.S.
+
+	and lower R.H.S. just above the status bar:<br/><br/>
+
+
+
+	(i)   '<span class="emph">Time</span>' is the time elapsed for the current level.<br/>
+
+	(ii)  '<span class="emph">Par Time</span>' is the ScoreDoom par time calculated for the level which determines the Par Bonus.<br/>
+
+	(iii) '<span class="emph">Carnage & Objectives</span>' represents the normal points accumulated for the level. Monster damage & kill points + map items found + secrets found + barrel points + map objective points + chain bonuses + infighting points.<br/>
+
+	(iv)  '<span class="emph">Par Bonus</span>' shows the current par bonus points to be added should the player(s) complete the level *right now*.<br/>
+
+	(v)   '<span class="emph">Level Score</span>' is the current score for the level (Damage/Secrets + Par Bonus).<br/>
+
+	(vi)  '<span class="emph">Wad/Epi Score</span>' is the overall current score for the all the levels played so far, including the current level.<br/>
+
+	(v)   '<span class="emph">Level Hi Score</span>' is the current Hi Score for the current wad/episode's map being played. (single player only)<br/>
+
+	(vi)  '<span class="emph">Wad/Epi Hi Score</span>' is the current Hi Score for the current wad/episode being played. (single player only)<br/>
+
+
+
+<br/><br/>
+
+	In multiplayer, a small text will also appear showing the overall (Wad/Epi Score) leader and their score on the upper R.H.S.<br/><br/>
+
+	There is a also a 'POINTS DIFF:' stat which displays how far behind you are from the points leader.
+
+	Damage points and all other points (finding secrets, chain bonuses etc...) are also displayed in the upper L.H.S. along with the normal pickup messages.<br/><br/>
+
+
+
+	At intermission screens & finale screens, the player stats are displayed. In singleplayer, gold scores represent hi scores set.
+
+	In co-op a gold score represents the leading player's score. At the end of the WAD or Episode, the winner's name is emblazoned
+
+	in gold.<br/><br/>
+
+
+
+	When the 'Level Hi Score' or 'Wad/Epi Hi Score' is beaten, text will flash notifying the player. The new Hi Score will only
+
+	be recorded when the player reaches the intermission screen or finale (i.e. completed the level). The score is emblazoned in
+
+	gold at the intermission screen. *Note: due to the way the par bonus behaves, it is possible to beat the hi score during a level, and have the 'hi score beaten' text flash, even more than once, but to not actually beat the hi score at the end of the level!*<br/><br/>
+
+
+
+	The ScoreDoom HUD can be turned on/off by setting the console variable <b>scoredoomstats</b> in the <i>zdoom-yourusername.ini</i> to true/false
+
+
+
+
+<br><br>
+
+<a href="#top">Back to top</a>
+
+
+
+<a NAME="7"><p class="style1">7. ScoreDoom Configuration Details</p></a>
+
+	Besides the regular gzdoom/zdoom configuration screens, there is a ScoreDoom Setup screen in the
+
+	options menu.<br><br>
+
+	'Online Hi Scoring': From v 2.3 onwards, this now has 3 options,
+	'off' for offline hi scoring, 'regular' for regular mode online hi scoring and 'hardcore' for hardcore 						mode online hi scoring. *<b>If changed, you will need to restart ScoreDoom</b>*.
+
+	<br><br>
+
+	'Hi Score Server URL': The url Scoredoom uses to communicate with a hi score server. The default is http://bilbohicks.007gb.com/hiscores.php
+
+	<br><br>
+
+	'Hi Score Server PWD': The password to use (with your current player name) on the Hi Score Server.
+
+	<br><br>
+
+	'Announcer Voice': Turns off the Bloodbath Announcer Voice.
+
+
+
+	<br><br>
+
+	Other ScoreDoom settings in the zdoom- .ini file are:<br><br>
+
+	'sp_random_custom_monsters': When set to true, makes single player have random custom monsters everytime a level is played when using the SD-ADDONPACK, like in multiplayer. This disables online hi scoring.
+
+	<br><br>
+
+	'sd_bbvolume': Sets the volume of the bloodbath announcer voice. Default: 0.8 (range 0.0->1.0)
+
+	<br><br>
+
+	<br><br>
+
+		'sd_acs_level_custom_monster_override' : For levels utilizing ACS. The sdmonsters DECORATE needs Thing IDs added for every monster. Additionally
+		ThingCount and ThingCountName and other ACS functions which call actionspecials from ACS script will
+		sometimes add a TID, which simply is not supported by Add-On Pack monster replacements. This can be used
+	to turn off Add-On Pack monster replacements for levels with ACS (default value is on (true)).
+
+
+
+
+<br/><br/>
+
+<p class="indent">
+
+<a NAME="71"><p class="style2b">7.1 Configuring Add-On Pack Content</p></a>
+<pre >
+	Monsters placements, and extra health/armor and artifact drops can now be edited in the zdoom-.ini file
+
+
+	The chance of a default monster being replaced by another is set by
+	sd_rep_(DEFAULTMONSTERNAME)chance (0->100)
+
+	(also see sd_artifact_chance & sd_extrahealth_chance)
+
+	To configure what monsters will replace what default monster, and what chance each
+	replacee has of occuring, are set as a list under:
+	[DEFAULTMONSTERNAMEReplacements]
+
+	An example is illustrative:
+
+	'...
+	sd_rep_baronofhell_chance=75
+
+	...
+
+	[BaronOfHellReplacements]
+	Cyberbaron=1
+	Desolator=2
+	ChainGunnerTankS=1:2
+	ChainGunnerTankF=1:1
+
+	....'
+
+
+	This means that a BaronOfHell has 75% chance of being replaced. When it is replaced, a Desolator has
+	50% chance of being used, the Cyberbaron 25%.
+	Entries ending with ':1' specify to use the monster only for Doom/Ultimate Doom wads. ':2' means to
+	only use the monster for Doom2/Evilution/Plutonia based wads. So ChainGunnerTankF has 25% chance of
+	being used for Ultimate Doom.
+
+	(also see [ArtiReplacements], [ExtraHealthReplacements], [ExplosiveBarrelReplacements] &
+	[BurningBarrelReplacements])
+
+	sd_artifact_chance (default=10) and sd_extrahealth_chance (default=35) control the rate of
+	extra scoredoom artifacts and other doom health/armor. Values are 0->255 (100%).
+
+	*NOTE*: When adding your own monsters, BaronOfHell, Fatso, Arachnotron, Cyberdemon & SpiderMastermind
+	replacements should have 'A_BossDeath' called in their 'Death' State DECORATE, or certain maps will
+	 not work. Also the height and radius of the replacement should not be larger than the default it is
+	 replacing, or you may get spawn problems.
+
+	For zdoom DECORATE etc... see: http://zdoom.org/wiki/Main_Page
+
+</pre>
+
+
+</p>
+
+<br><br>
+
+
+
+<a NAME="112"><p class="style1">8. Add-On Pack Details</p></a>
+
+Around 15 new Doom-like powerups and over 250 new Doom-like monsters can be added, by using the SD-ADDONPACK.wad. Its recommended for Online Hi Scoring to place the wad in the 'skins' sub-directory, though it can be added from the
+
+command line. <br><br>
+
+When using the Add-On Pack in single player, the scoredoom custom monster algorithm will ensure that you will always see the same monsters on the same level with the same iwad/pwad files loaded for the same skill level.
+
+This is to ensure that hi scores are meaningful with the Add-On Pack.
+
+<br><br>
+
+See the add-on pack readme, contained in the Add-On Pack download for more details.
+
+
+
+<br/><br/>
+
+<a href="#top">Back to top</a>
+
+<br/><br/>
+
+
+
+
+
+
+
+<a NAME="112"><p class="style1">9. Co-op sv_cheats support</p></a>
+
+A minor, but useful feature of ScoreDoom is the addition of a warning buzzer sound, as well as the usual console message for when a player uses a cheat in co-op when zdoom's multiplayer +sv_cheats is set. Using cheats in co-op can be essential when playing some
+
+wads like STRAIN, which may require players to cheat to complete a level (like using noclip say). The buzzer sound should help other players be notified so cheaters can be policed better.
+
+
+
+
+
+<a NAME="9"><p class="style1">10. Multiplayer HowTo</p></a>
+
+**always make sure that everyone downloads the latest version of ScoreDoom and the add-on pack from <a href="http://www.scoredoom.com">www.scoredoom.com</a>
+
+before playing**<br><br>
+
+When using the Add-On Pack, all users must have the same Add-On Pack configuration settings in their ini: (See <a href="#71">7.1 Configuring Add-On Pack Content</a>)
+<br><br>
+
+To play Doom II with custom monsters, starting on map 1, on ultraviolence, with the host having IP 192.168.0.2 for a 2 player game ...<br/><br>
+
+For the host:<br/>
+
+<i>gzscoredoom.exe -iwad doom2.wad -fileSD-ADDONPACK.WAD -host 2 -warp 1 -skill 4 -netmode 1</i><br/><br>
+
+For the players joining:<br/>
+
+<i>gzscoredoom.exe -iwad doom2.wad -fileSD-ADDONPACK.WAD -join 192.168.0.2 -warp 1 -skill 4 -netmode 1</i><br/><br/>
+
+
+
+You'll notice netmode is set to 1 (client server instead of peer to peer 0). I found this to be the best on my LAN at home, even with just 2 players<br>
+
+
+
+To get rid of all those extra weapons in the game in co-op, and setting other multiplayer settings, you will need to make use of <b>+dmflags</b> & <b>+dmflags2</b> in the command line too. Only the host needs to set these.
+
+I gleaned the following valuable information from the zdoom.org forums (Thanks to Vaecrius):<br/>
+
+<pre style="font-size:9pt;">
+
+The weapons are there for deathmatch purposes. Unfortunately Doom doesn't distinguish between co-op
+
+and DM weapon spawning, so you'll either have to use those or manually turn off multiplayer weapons.
+
+Go into the menu, hit "OPTIONS" and go to "gameplay options". You should see a big list of stuff to
+
+check off. Take a moment to check off everything you want (and get rid of anything you don't want),
+
+then once you're done write down the two numbers that show up. Remember which is under "dmflags" and
+
+which is under "dmflags2"! Then quit ZDoom and start setting up your game.
+
+When you start up the game, add "+dmflags <number> +dmflags2 <number>" to the command line.
+
+For instance, if you want default values for everything except you don't want those extra weapons,
+
+you add "+dmflags 1048576" (omitting dmflags2 since you don't need to specify anything for it).
+
+When the game starts, you should see the normal, singleplayer weapon placements.
+
+
+
+To apply from the command line just start it with +dmflags *dmflagsnumber* and +dmflags2 *yourdmflags2number*
+
+
+
+somewhere in there, example:
+
+
+
+gzscoredoom.exe -iwad doom2.wad -file impencse.wad -host 2 -warp 25 -skill 3 +dmflags *dmflagsnumber* +dmflags2 *dmflags2number*
+
+</pre>
+
+<br>
+
+<a href="#top">Back to top</a><br>
+
+
+
+<a NAME="10"><p class="style1">11. Strategies For Better Scores</p></a>
+(Note: Some of these tips may only pertain to when playing with the add-on-pack)<br>
+In OpenGL options, you should increase the brightness so that darker levels are rendered more visible<br>
+
+Intelligent use of the correct weapon for the right occasion can increase scores (improving chain-bonuses etc...)<br>
+
+Some levels have tons of map items grouped together, like blue flasks which while only worth 5 points each, can score a ton of points collectively.<br>
+
+In co-op games, the leader always scores the max for infighting bonuses, which can extend the lead.<br>
+
+Artifact Powerups in the add on artifact pack can be used to increase scores considerably. The UAC Smartbomb weapon can be used to wrack up a
+
+tremendous amount of points, due to its heavy damange and resultant damage bonuses it can create.<br>
+
+
+
+
+<br>
+
+
+
+
+
+<a NAME="111"><p class="style1">12. Credits</p></a>
+
+<pre>
+
+*DragonsBrethren, Doom64Hunter, Edward850, dljosef, The Green Herring, NovaDragon & DavidB1000 for QA and beta-testing, which has helped me increase the quality of the
+mod significantly*
+
+
+
+ID Software, Monolith Software, 3D Realms
+
+Graf Zahl, Randy Heit for zdoom & gzdoom
+
+BlackCecil05 for the video replays
+
+Eriance and the Demon Eclipse team for artifact powerup graphics.
+
+Xaser, Jimmy 91, Skulltag Team for extra powerup ideas and graphics
+
+Tormentor667 for the promotion of zdoom custom monsters.
+
+WildWeasel, DBThanatos for their custom zdoom content, which I learnt a lot from.
+
+Enjay, for supplying the BBA.rff (BBA.wad) of the Bloodbath Announcer
+
+Everyone else.
+
+
+
+</pre>
+
+
+
+<a href="#top">Back to top</a>
+-->
+<div style="position: absolute; top: 40px; right: 0px; text-align: center; width: 360px;">
+<a style="font-weight:bold;color:" onclick="window.close();" href="#" id="hscontrols">Forums</a>
+</div>
+
+<div style="position: absolute; top: 60px; right: 0px; text-align: center; width: 360px;">
+<a style="font-weight:bold;color:" onclick="window.close();" href="#" id="hscontrols">Other Stuff</a>
+</div>
+
+</body>
+<head>
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+</head>
+
+</html>
+

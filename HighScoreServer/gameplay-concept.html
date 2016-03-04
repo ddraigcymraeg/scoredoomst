@@ -1,0 +1,177 @@
+<head>
+<style type="text/css">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta http-equiv="EXPIRES" content="-1">
+<!--
+
+.style1 {font-size: 11pt;color:white;color:rgb(255, 218, 185);}
+
+.style2 {font-size: 12pt;color:white;color:rgb(255, 218, 185);}
+
+.style2b {font-size: 12pt;color:white;font-weight:bold;color:rgb(255, 218, 185);}
+
+.indent {left:10px;position:relative;}
+
+.emph {color:rgb(255, 192, 203); font-weight:bold;}
+
+table {border-width:0px;border-color:black;border-style:outset;border-bottom:0px;color:black;font-weight:bold;}
+
+td  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+th  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+
+
+A {
+
+	color: rgb(255, 218, 185);
+
+}
+
+A:link, A:visited
+
+{
+
+	text-decoration: none;
+
+	color: rgb(255, 192, 203);
+
+}
+
+
+
+A:hover, A:active
+
+{
+
+	text-decoration: underline;
+
+	//color: #bfbfff;
+
+}
+
+
+
+.parTable th {
+
+color:rgb(255, 218, 185);
+
+
+
+
+
+}
+
+
+
+.parTable td {
+
+color: rgb(255, 192, 203);
+
+
+
+
+
+}
+
+-->
+
+</style>
+
+</head>
+
+<body background="TALLYHO!readme_files/stars.gif" style="font-family:Verdana,Arial,Helvetica,sans-serif;font-size:75%;background-color:black;color:rgb(211, 211, 211);">
+<center>
+<p>
+<b><i>"Doom feels more like 1st person Robotron than a modern FPS"</i></b>
+<br>
+- <a href="http://vectorpoem.com/news/?p=74" target="sdwin">vector poem</a>
+</p>
+</center>
+
+<p  style="font-weight:bold;">
+<span class="style1" style="color: rgb(156, 156, 222);">Gameplay Concept</span><br>
+<p>SIMPLE. Be the highest points scorer: <br><i>Try to find as many secrets and map items as possible, kill as many monsters as possible, complete as many map objectives as possible, and explode as many barrels as possible, as quickly as possible. The player with the highest points or hi-score wins the game. Other than that, it is Doom.</i></p>
+
+<p>ScoreDoom came about from a love of fast-twitch, fast-paced shooters, epitomized by early arcade games like <a href="http://en.wikipedia.org/wiki/Robotron:_2084" target="sdwin">Robotron</a>, and <a href="http://en.wikipedia.org/wiki/Smash_TV" target="sdwin">Smash TV</a>, together with a love of co-op gameplay in general. I noticed that my enjoyment of Doom was derived from the same experience I received with the fast-twitch arcade shooters like Robotron.<br><br>
+
+vector poem (Jean-Paul LeBreton), the lead designer of Bioshock 2, summarized the connection between Doom and earlier shooters like Robotron elegantly in a <a href="http://vectorpoem.com/news/?p=74" target="sdwin">blog article</a>.
+
+</p>
+
+<p style="font-weight:bold;">
+<span class="style1"  style="color: rgb(156, 156, 222);">ScoreDoom vs ScoreDoomST</span><br>
+</p>
+
+ScoreDoom is the 'offline' version. ScoreDoomST is the internet multiplayer co-op version. <br><br>
+ScoreDoom is meant to be played single-player, where you are either taking on the global hi-score for the level and total global hi-score for the game (wad) you are playing, or simply competing against your local hi-scores.
+The global hi scores and the names of the players who set them are hosted online, as well as displayed in-game for others to see.
+<br><br>
+ScoreDoomST is for online co-op competative play where the winner is the player to finish the game with the highest score, or the first to hit a point-limit, or have the highest score after the last map in a map rotation.
+<br><br>
+ScoreDoom and ScoreDoomST have seperate add-on packs, but by and large the extra monsters and artifacts are
+very similar.
+<br><br>
+It is possible to play regular ScoreDoom on a LAN or online, but it is recommended for players to have a fast connection.
+
+
+<p class="indent">
+</p>
+
+<p style="font-weight:bold;">
+<span class="style1"  style="color: rgb(156, 156, 222);">Gameplay Details</span><br>
+</p>
+<p class="indent">
+
+
+<a><b>Scoring</b></a><br><br>
+
+
+
+	(i)  <span class="emph">Damage</span>: Players get points for the amount of damage they inflict on monsters.<br><br>
+
+	(ii) <span class="emph">Kills</span>: Players also get bonus points for making a kill which is 10% of the total health of the monster. The Boss Brain gives +5000 points on death.<br><br>
+
+	(iii) <span class="emph">Extreme Death Kill Bonuses</span>: On top of the Kill bonus points, players also get bonus points for making an 'extreme death' kill which takes the monsters health down to more than negative it's initial health. This bonus gives 10% of the total health of the monster. Extreme deaths are when certain monsters explode into gibs. This rewards players creating more carnage with powerful weapons.(*NOTE: Extreme death bonuses do not apply to monsters with health less than 20HP, i.e. imp trite*)<br><br>
+
+	(iv) <span class="emph">Secrets</span>: Finding a secret gives +250 points.<br><br>
+
+	(v) <span class="emph">Map Objectives</span>: In multiplayer, bonus points are given for players who reach certain objectives in the level first. These include: getting to a keycard or skullkey first (+250 points), opening a door with a keycard or skullkey first (+250 points), reaching the level exit first (+250 points), reaching a secret level exit first (+500 points). In SP, bonus points are still given for reaching these objectives, since in some wad levels: keys, colored doors and secret level exits can be optional depending on secrets found etc... Additional support has also been given for 'any key' (+250), 'All 3 keys' (+750), and 'All 6 Keys' (+1500) doors.<br><br>
+
+	(vi) <span class="emph">Map Items</span>: Collecting a map item gives +10 points. Any item counted as a map item in Doom, is one that <b>can always be picked up</b>, and goes towards the Item Count percentages at intermission screens. Items like blue health flasks, armor helmet bonuses, radiation suits, artifact powerups, automap pickups, beserk packs, infrared goggles etc... Not armor suits, health pickups, ammo or weapons.<br><br>
+
+	(vii) <span class="emph">Par Bonus (not in ScoreDoomST)</span>: The bonus/penalty to be added depending on how well the player beat the map's ScoreDoom par time. Its based on a percentage of the total points scored so far for the level.<br><br>
+
+	(viii) <span class="emph">Chain Bonuses</span>: If a player can kill 4 monsters in a very short time, they will get a small bonus of +5 points or more (depending on the monster's starting health), which accumulates up to a +5 or more point bonus, for every other monster killed after that, just as quickly. If the player can keep the rampage going, they will eventually get a full Chain Bonus of +5 or more points per monster. (NOTE: Any extreme death bonus will also be added to the chain bonus score for the killed monster, which essentially doubles the extreme death bonus during chain bonuses. This rewards players creating more carnage with powerful weapons.)(*NOTE2: Chain bonuses do not apply to monsters with health less than 20HP, i.e. imp trite*)<br><br>
+
+	(ix) <span class="emph">Co-op Death</span>: There is a -1000pt penalty for death in co-op games which come from monsters, environmental hazards or suicide. Death from other players has no penality. Points can never be less than 0. This was added in mind to stop players taking advantage of deliberate suicides, as well as a general penalty. This score does not get applied in SP, since the level is reset on death.<br><br>
+
+	(x) <span class="emph">Monster Infighting Deaths and Monster Suicides</span>: Since monster deaths due to infighting and suicides are ultimately player assisted, there is a small bonus for these deaths too. In SP, it is equal to the kill bonus of the monster (10% of the original health). In Co-op, the current level points leader (*not the total wad score leader on the HUD!*) scores a bonus equal to the creature's kill bonus, whereas every other player scores a fraction of this depending on the ratio of their score for the level to the level points leader score. No player can get less than 1pt, and only the current level points leader will (should!) get the full bonus. The rationale behind this was that the level points leader probably deserves the bigger bonuses, and it also forces the other players to attack more to get in front.<br><br>
+	<b><i>In ScoreDoomST this converts to the player who has the sum of the most accumulative kills, items found, secrets found and barrels blown within the level, as opposed to points accumulated within the level.</i></b>
+	<br><br>
+
+	(xi) <span class="emph">Barrels</span>: Barrels give +10 points when destroyed.<br><br>
+
+	(xii) <span class="emph">100% Complete Bonuses</span>: At the end of a level, extra bonus points are awarded when: 100% of all monsters are slain, 100% of all items are found, 100% of all secrets are found, 100% of all barrels are exploded. Total bonus points scale with the amount of monsters, items, secrets and barrels within the level. Levels with no barrels etc... dont give these bonus points.<br>
+	<br>
+	<b><i>In ScoreDoomST this converts to the player who has the most in either category for the level, that gets the bonus, it does not have to be 100%. On intermission screens this is signified by a gold [K(ills),
+	I(items),S(ecrets),B(arrels)] next to the awarded player's  name.</i></b>
+	<br><br>
+	(xiii) <span class="emph">Summoned/Resurrected Monsters (not in ScoreDoomST)</span>: Monsters such as Lost Souls which are spawned by Pain Elementals etc..., and monsters resurrected by Archviles etc.., do NOT score points. This also applies to monsters spawned in from cubes emitted by The Icon of Sin. Lost Souls etc..., by themselves, (i.e. not summoned from Pain Elementals. etc...) DO score.<br><br>
+
+	<b><i>In ScoreDoomST ALL summoned/spawned monsters DO score.</i></b>
+		<br><br>
+
+	(ix) <span class="emph">Point-Limit, Map-Limit (ScoreDoomST only)</span>: In ScoreDoomST, the server admin can set a maplist up to rotate. A player with the most points at the end of the last map wins the game.<br>
+	A Point-Limit may also be set up between 10,000 to 1,000,000,000 points, and whoever hits it first, is the
+	winner. This can be set by the server admin or by player vote.
+	<br><br>
+
+<b>Download ScoreDoom/ScoreDoomST and extra add-ons <a href="download.html" ><b>here</b></a></b>
+
+
+
+</p>
+
+
+</body>

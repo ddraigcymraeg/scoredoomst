@@ -1,0 +1,323 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"><title>ScoreDoomST
+
+ 0.97c2 Beta 5 README</title>
+
+<style type="text/css">
+
+<!--
+
+.style1 {font-size: 14pt;color:white;color:rgb(255, 218, 185);}
+
+.style2 {font-size: 12pt;color:white;color:rgb(255, 218, 185);}
+
+.style2b {font-size: 12pt;color:white;font-weight:bold;color:rgb(255, 218, 185);}
+
+.indent {left:10px;position:relative;}
+
+.emph {color:rgb(255, 192, 203);}
+
+table {background-color:white;border-width:0px;border-color:black;border-style:outset;border-bottom:0px;color:black;font-weight:bold;}
+
+td  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+th  {border-width:0px;border-color:black;border-style:inset;border-left;0px;border-right:0px;}
+
+
+
+A {
+
+	color: rgb(255, 218, 185);
+
+}
+
+A:link, A:visited
+
+{
+
+	text-decoration: none;
+
+	color: rgb(255, 192, 203);
+
+}
+
+
+
+A:hover, A:active
+
+{
+
+	text-decoration: underline;
+
+	//color: #bfbfff;
+
+}
+
+
+
+.parTable th {
+
+color:rgb(255, 218, 185);
+
+
+
+
+
+}
+
+
+
+.parTable td {
+
+color: rgb(255, 192, 203);
+
+
+
+
+
+}
+
+-->
+
+</style>
+
+</head><body style="font-size: 11pt;
+background-color: black; color: rgb(211, 211, 211);">
+<h1> ScoreDoomST 0.97c2 Pre-Release</h1>
+
+
+<pre>
+(The 0.97c2 Pre-Release is the unofficial final release)
+Changes from Beta5:
+
+* SDST Add-on pack is now enforced on client authentication.
+	-Since ScoreDoomST is hardcoded to use the SDST-Add-on Pack, clients that try and connect to a
+	 server will be audited to see if they should be playing with the add-on pack, and if so, if
+	 they have the 'correct' version that the server is running. Clients will be kicked if (i) they
+	 need to add the pack, (ii) they need to remove the pack, (iii) they need to get the correct version
+	 that the server is using.
+
+
+* Extra health drops lessened.
+
+* Tweaks to SDST add-on pack, including making the Boss-Rush more challenging.
+
+
+TODO:
+Get/create an SDST specfic version of a client like IDESE. Until I get around to developing an SDST
+plugin for Dooseeker, players wll need to use the ST 97c2 Idese client. For instructions on how to configure
+and use Idese with ScoreDoomST, read below.
+</pre>
+
+<b>Download <a
+href="http://www.filefront.com/16367533/ScoreDoomST97c2PreRelease.rar">ScoreDoomST
+ 0.97c2 Pre-Release (w. SDST add-on pack)</a></b>
+
+<br>
+<b>Intro</b><br>
+ScoreDoomST is an attempt to add arcade hi-scoring to Doom, similar to SmashTV.
+Players compete against each other cooperatively to be the highest scorer either when the point-limit
+is hit, or the last map in the map rotation ends, or at the end of the Doom episode/wad
+(i.e. E1M8, MAP30).<br>
+You can play with the SDST-ADDONPACK, which will give a ton of new monsters and artifacts, including a 'Boss
+Rush' mode for levels like E1M8, E2M8 & E3M8.<br>
+Furthermore you can also play with the 0.79c2 skulltag.wad, which can be grabbed from
+<a href="http://skulltag.net/download/files/release/st-v097c2.zip">here</a>, This will give the skulltag
+announcer voice, as well as a ton of new player skins to play with.
+
+<br><br>
+<table><tr><td>
+<object width="540" height="304"><param name="movie" value="http://www.moddb.com/media/embed/259204"></param><param name="wmode" value="transparent"></param><param name="allowfullscreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.moddb.com/media/embed/259204" type="application/x-shockwave-flash" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" width="540" height="304"></embed></object>
+</td><td>
+<object width="540" height="304"><param name="movie" value="http://www.moddb.com/media/embed/259205"></param><param name="wmode" value="transparent"></param><param name="allowfullscreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.moddb.com/media/embed/259205" type="application/x-shockwave-flash" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" width="540" height="304"></embed></object>
+</td></tr></table>
+<br><br>
+<p>
+ScoreDoomST is a Multiplayer Client-server port of ScoreDoom using the
+Skulltag v97c2 source release.
+<br>
+ScoreDoom has primitive multiplayer capabilities, and it is very
+cumbersome and inefficient for internet
+gameplay, ScoreDoomST was created to fix that.
+<br><br>
+ScoreDoom moreinfo:  <a href="http://www.scoredoom.com/" target="_blank">http://www.scoredoom.com</a>
+<br>
+Skulltag moreinfo: <a href="http://www.skulltag.net/" target="_blank">http://www.skulltag.net</a>
+</p>
+
+<p><b>Purpose of 0.97c2 Beta 5</b><br><br>
+To get information on any gameplay bugs (scoring etc...) pertinent to the
+ mod, as well as any other quirks/bugs/crashes when using the add-on pack
+<br>
+Please post bug-reports, comments, feedback @ <a
+href="http://scoredoom.com/phpBB2/" target="_blank">http://scoredoom.com/phpBB2/</a>
+
+<br><br>
+</p><pre>There is a Master Server for ScoreDoomST up at: 99.67.224.186:15300 which you can use for Idese
+
+Or the ScoreDoomST client internal browser, via the ini:
+cl_masterip=99.67.224.186
+sv_masteroverrideip=99.67.224.186
+sv_masterip=99.67.224.186
+</pre>
+
+<br><br>
+<p><b>Add-on Pack Installation</b><br><br>
+Place the add-on pack in the same directory as the scoredoomst executable. <br>
+If you are running a server via Idese, specify the SDST-ADDONPACK.WAD as a PWAD.
+
+
+<br><br>
+
+<p><b>QuickStart Guide</b><br><br>
+(Please see the link above and the Gameplay Summary Section below to
+understand what ScoreDoom is all about.).
+
+<br><br>
+
+
+
+<!--ScoreDoomST is not compatible with the official Skulltag Master Server,
+and if the Master Server above is not working, you should  start a server
+with IDeSE, with 'Private Server' checked and/or LAN server checked, or
+you may get 'WSAEADDRENOTAVAIL'
+messages.
+<br><br>-->
+*IDeSe must first be set to look for scoredoomst.exe in the Options tab,
+ since it defaults to look
+for skulltag.exe*<BR>
+Also, for the SDST Add-On Pack, which you should install in the same directory, you should
+ specify the directory in Option/Wads where to look for the Add-On Pack as well as other wads.
+<br><br>
+The clients should be started with IDeSe too. <br>
+Basically, when you create a server, share the IP with your co-players,
+and have them add the IP to their their IdeSe
+'Custom Server' list.
+ScoreDoomST uses the 'Cooperative' gametype of SkullTag, so select that
+when starting a server.
+<br><br>
+
+
+Single Player is not supported (see regular ScoreDoom for that), and the
+ menus look just like Skulltag, but
+the only game mode is 'ScoreDoom Cooperative' and the only votes you can
+ call are 'MAP', 'KICK' and 'POINTLIMIT'.
+<br><br>
+
+<b>Using the MAP vote is essential in restarting ScoreDoom
+games/campaigns, since all scores are set to 0, which essentially starts a new  Scoredoom Game.
+(see 'Gameplay Summary'below).</b>
+the future, there will be proper point-limits, time-limits and maplists to play against.
+
+</p>
+
+<br><br>
+<p><b>ScoreDoomST Hosting Tips</b>
+<pre style="font-size: 12px;">
+ScoreDoomST naturally uses more bandwidth than regular Skulltag due to the more intense & continual
+nature of the scoring, so clients get updated much more frequently.
+Playing with the Add-on Pack, with the more exotic & complicated enemies and weaponary means more
+entitities being spawned which can eat more banwidth.
+If you plan to play intense wads like scythe2 with the add-on pack with more than 2 players, it may
+be better to have a machine solely running as the server, though your mileage may vary.
+I noticed when playing intense wads with the add-on pack, even with one person, that the server was
+much more stable if it was running on its own dedicated machine, as opposed to sharing the same
+machine with a player.
+Add-on Pack support will probably remain in 'beta' after the final release, so if running a server
+with it proves to be unstable, trying running a server without the pack loaded.
+
+</pre>
+</p>
+
+<p><b>ScoreDoomST Add-On Pack</b>
+</p><pre style="font-size: 12px;">
+The SDST Add-On Pack adds:
+
+*	Over 250 monsters.
+*	Over 15 artifacts
+*	alt-fire modes: double-speed/double inaccuracy for chaingun,
+	grenade launcher for the rocket launcher,
+	rail gun for the plasma rifle
+	mini-nuke for the bfg.
+*	Points Bunny (Daisy) & Zombie Scientist Bonuses
+*	Boss-Rush modes for E1M8, E2M8, E3M8 type levels
+
+*Make sure to enable secondary fire & jump in the controls options*
+
+The SDST add-on pack is similar to the regular ScoreDoom add-on pack, except it is missing a few monsters, and has different artifacts.
+</pre>
+
+
+<br><br>
+<p><b>ScoreDoomST Gameplay Summary</b>
+</p><pre style="font-size: 12px;">For those familiar with ScoreDoom, ScoreDoomST gameplay is pretty much exactly the same concept, except
+for some minor differences.
+
+ScoreDoomST is a 'cooperative' gametype where players score points and compete against each other
+like with Halo's campaign meta-game, and old-skool arcade 'ccoperative' games like Smash-TV.
+
+A campaign in SDST is from the starting map selected (via a VOTE or whatever) till the final finale,
+(E1M8, E2M8, etc... or MAP30), or if the pointlimit or maplimit is met, whereby the game resets back to the starting map of the pwad/iwad/episode
+(E1M1, E2M1, etc... or MAP01). Points are accumulated across the levels played over, until the final
+finale is reached, and the points are reset. The player with the most points at the end is the winner.
+
+Players can vote on a point limit between 10,000 and 1,000,000,000 points.
+
+A map limit comes into effect when a map rotation is used. When the last map is ended, a winner is declared,
+and the points are recycled.
+
+Points are accumulated in a variety of ways:
+
+*	Damage done to monsters
+
+*	Monster kills (10% bonus of the orginal health of the monster)
+
+*	Extreme death kills (a further 10% bonus of the orginal health of the monster, on top of the kill bonus)
+	are when you take the monster's health down to more than negative it's initial health (certain monsters
+	explode into gibs)
+
+*	Secrets: Finding a secret first scores 250 points
+
+*	Map Objectives: Finding a key/skullkey first, and using it first scores 250 points. Reaching a level exit
+    	first gives 100 points, and reaching a secret level exit first gives 200 points.
+
+*	Map items: Collecting a map item gives +5 points. Any item counted as a map item in Doom, is one that can
+	always be picked up, and goes towards the Item Count percentages at intermission screens. Items like blue
+	health flasks, armor helmet bonuses, radiation suits, artifact powerups, automap pickups, beserk packs,
+	infrared goggles etc... Not armor suits, health pickups, ammo or weapons.
+
+*	Barrels: Barrels give +5 points when destroyed.
+
+*	Chain Bonuses: If a player can kill 4 monsters in a very short time, they will get a small bonus of
+	+5 points or more (depending on the monster's starting health), which accumulates up to a +5 or more point
+	bonus, for every other monster killed after that, just as quickly. If the player can keep the rampage going,
+	they will eventually get a full Chain Bonus of +5 or more points per monster. (NOTE: Any extreme death bonus
+	will also be added to the chain bonus score for the killed monster, which essentially doubles the extreme
+	death bonus during chain bonuses.
+
+*	'Most' Bonuses: At the end of a level, 100 extra bonus points are awarded to the player which has
+	the most monsters killed, has the most items found, has the most secrets found, and has most barrels blown.
+	*NOTE*: It is important to pick up barrels and items etc..., since it effects the next score:
+
+*	Monster Infighting Deaths and Monster Suicides: Since monster deaths due to infighting and suicides are ultimately
+	player assisted, there is a small bonus for these deaths too. *The player with the total cumulative count of monsters
+	killed, items found, secrets found and barrels blown is considered the most active player and gets a full bonus
+	of 10% of the orginal health of the monster killed this way.* Other players get a fraction of this score based on the
+	ratio of their cumulative count to the leaders. Though even players with 0 will get at least 1 point.
+
+*	Player Deaths: Player deaths due to other players carry no score penalty, though deaths due to monsters, suicide, and
+	the environment cary a -1000 penalty (points get set to zero and are never negative).
+
+
+ScoreDoomST 'Most' Medals
+
+A gold emblazoned 'K', 'I', 'S' and 'B' can show up at the left of the player's name on the intermission/finale
+scoreboards. These all signify that the player got a 100 point bonus for each. 'K' = most kills within the level,
+'I' = most items picked up within the level, 'S' = most secrets found within the level, 'B' = most barrels blown
+within the level. Also note that monster death bonuses due to the environment, suicide &amp; infighting favor players
+with the greatest cumulative count in these categories, which can act as a powerup of sorts.
+
+</pre>
+
+
+</body></html>
